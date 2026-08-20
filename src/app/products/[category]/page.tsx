@@ -1,3 +1,4 @@
+import { CDN_BASE } from "../../../lib/cdn";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -36,7 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: `Explore our ${firstProduct.categoryTitle.toLowerCase()} range from ${brand.name}.`,
       images: [
         {
-          url: `/images/brand/product-${category}.webp`,
+          url: `${CDN_BASE}/images/brand/product-${category}.webp`,
           alt: firstProduct.categoryTitle,
         },
       ],
@@ -85,7 +86,7 @@ export default async function CategoryProductPage({ params }: Props) {
         eyebrow={`Products · ${categoryTitle}`}
         title={categoryTitle}
         subtitle={categoryDescriptions[category] || `${categoryTitle} from ${brand.name}.`}
-        bgImage={`/images/brand/product-${category}.webp`}
+        bgImage={`${CDN_BASE}/images/brand/product-${category}.webp`}
         showScroll
       />
 
@@ -111,7 +112,7 @@ export default async function CategoryProductPage({ params }: Props) {
               >
                 <div className="relative aspect-square overflow-hidden bg-white">
                   <Img
-                    src={`/images/products/${p.slug}.png`}
+                    src={`${CDN_BASE}/images/products/${p.slug}.png`}
                     alt={p.name}
                     fill
                     sizes="(min-width:1280px) 25vw, (min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw"

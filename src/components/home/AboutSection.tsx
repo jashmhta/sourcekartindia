@@ -1,5 +1,7 @@
 "use client";
 
+import { CDN_BASE } from "../../lib/cdn";
+
 import { useEffect, useRef } from "react";
 import Link from "next/link";
 import gsap from "gsap";
@@ -73,7 +75,7 @@ export function AboutSection() {
               className="relative aspect-[3/4] max-h-[640px] overflow-hidden rounded-[28px]"
             >
               <Img
-                src="/images/about/founder.webp"
+                src={CDN_BASE + "/images/about/founder.webp"}
                 alt={`${brand.founder.name}, ${brand.founder.role} of ${brand.name}`}
                 fill
                 sizes="(min-width:1024px) 40vw, 90vw"

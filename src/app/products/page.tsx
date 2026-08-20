@@ -1,3 +1,4 @@
+import { CDN_BASE } from "../../lib/cdn";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHero } from "@/components/PageHero";
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: `Products | ${brand.name}`,
     description: `Explore ${brand.name} Food & Health ingredients: vitamins, amino acids, herbal extracts, nutraceuticals, sweeteners, nucleotides, proteins, and sports nutrition.`,
-    images: [{ url: "/images/brand/product-amino-acids.webp", alt: "SourceKart Products" }],
+    images: [{ url: CDN_BASE + "/images/brand/product-amino-acids.webp", alt: "SourceKart Products" }],
     type: "website",
   },
 };

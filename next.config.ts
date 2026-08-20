@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "framerusercontent.com",
+        hostname: "sourcekart-cdn.binaryjash.workers.dev",
         pathname: "/**",
       },
     ],

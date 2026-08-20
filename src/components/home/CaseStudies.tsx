@@ -1,3 +1,4 @@
+import { CDN_BASE } from "../../lib/cdn";
 import Link from "next/link";
 import { ArrowRight } from "../ui/Icons";
 import { Img } from "../ui/Img";
@@ -11,7 +12,7 @@ const stories = [
     meta: "About the company",
     author: brand.founder.name,
     role: brand.founder.role,
-    image: "/images/brand/banner2.webp",
+    image: CDN_BASE + "/images/brand/banner2.webp",
   },
   {
     href: "/applications",
@@ -20,7 +21,7 @@ const stories = [
     meta: "Application segments",
     author: brand.name,
     role: "Specialty Chemicals",
-    image: "/images/brand/banner3.webp",
+    image: CDN_BASE + "/images/brand/banner3.webp",
   },
 ];
 

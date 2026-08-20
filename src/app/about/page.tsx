@@ -1,3 +1,4 @@
+import { CDN_BASE } from "../../lib/cdn";
 import type { Metadata } from "next";
 import { PageHero } from "@/components/PageHero";
 import { Button } from "@/components/ui/Button";
@@ -26,7 +27,7 @@ export default function AboutPage() {
         eyebrow="About Us"
         title="Sourcing Better. Supplying Smarter."
         subtitle="SourceKart is a sourcing and distribution company focused on high-quality nutraceutical, food and health ingredients."
-        bgImage="/images/brand/banner1.webp"
+        bgImage={CDN_BASE + "/images/brand/banner1.webp"}
         showScroll
       />
 
@@ -56,7 +57,7 @@ export default function AboutPage() {
           <Reveal delay={0.12}>
             <div className="relative aspect-[4/3] overflow-hidden rounded-[28px]">
               <Img
-                src="/images/about/about.jpg"
+                src={CDN_BASE + "/images/about/about.jpg"}
                 alt={`${brand.name}, ingredient sourcing and supply operations`}
                 fill
                 sizes="(min-width:1024px) 45vw, 100vw"
@@ -140,7 +141,7 @@ export default function AboutPage() {
             <div className="mt-10 grid gap-10 lg:grid-cols-[1fr_1.6fr] lg:items-start">
               <div className="relative aspect-[3/4] overflow-hidden rounded-[28px]">
                 <Img
-                  src="/images/about/founder.webp"
+                  src={CDN_BASE + "/images/about/founder.webp"}
                   alt={`${brand.founder.name}, Founder of ${brand.name}`}
                   fill
                   sizes="(min-width:1024px) 30vw, 80vw"

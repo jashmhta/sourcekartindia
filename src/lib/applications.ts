@@ -1,3 +1,4 @@
+import { CDN_BASE } from "./cdn";
 /** SourceKart application segments (8 industries served) */
 
 export type Application = {
@@ -17,7 +18,7 @@ const defs: Application[] = [
     slug: "pharmaceuticals",
     name: "Pharmaceuticals",
     title: "Pharmaceuticals",
-    image: "/images/brand/product-vitamins.webp",
+    image: CDN_BASE + "/images/brand/product-vitamins.webp",
     sector: "Health & Wellness",
     description:
       "Pharma-grade vitamins, amino acids, and excipients for tablets, syrups, and nutra-pharma formulations.",
@@ -40,7 +41,7 @@ const defs: Application[] = [
     slug: "nutraceuticals",
     name: "Nutraceuticals & Supplements",
     title: "Nutraceuticals & Supplements",
-    image: "/images/brand/product-nutraceuticals.webp",
+    image: CDN_BASE + "/images/brand/product-nutraceuticals.webp",
     sector: "Health & Wellness",
     description:
       "Specialty actives, amino acids, and botanical extracts for dietary supplements and wellness brands.",
@@ -63,7 +64,7 @@ const defs: Application[] = [
     slug: "personal-care-and-beauty",
     name: "Personal Care & Beauty",
     title: "Personal Care & Beauty",
-    image: "/images/brand/product-herbal-extracts.webp",
+    image: CDN_BASE + "/images/brand/product-herbal-extracts.webp",
     sector: "Health & Wellness",
     description:
       "Vitamins, amino acids, and botanical actives for skin, hair, and personal care formulations.",
@@ -86,7 +87,7 @@ const defs: Application[] = [
     slug: "sports-nutrition",
     name: "Sports Nutrition",
     title: "Sports Nutrition",
-    image: "/images/brand/product-sports-nutrition.webp",
+    image: CDN_BASE + "/images/brand/product-sports-nutrition.webp",
     sector: "Health & Wellness",
     description:
       "Performance and recovery actives for sports nutrition brands, from creatine and Beta Alanine to BCAA, EAA, and citrulline blends.",
@@ -109,7 +110,7 @@ const defs: Application[] = [
     slug: "food-and-beverages",
     name: "Food & Beverages",
     title: "Food & Beverages",
-    image: "/images/brand/product-sweeteners.webp",
+    image: CDN_BASE + "/images/brand/product-sweeteners.webp",
     sector: "Food & Nutrition",
     description:
       "Sweeteners, vitamins, and clean-label ingredients for functional foods, dairy, bakery, and beverages.",
@@ -132,7 +133,7 @@ const defs: Application[] = [
     slug: "animal-nutrition",
     name: "Animal Nutrition",
     title: "Animal Nutrition",
-    image: "/images/brand/product-vitamins.webp",
+    image: CDN_BASE + "/images/brand/product-vitamins.webp",
     sector: "Food & Nutrition",
     description:
       "Feed-grade vitamins, amino acids, and minerals for poultry, swine, aqua, and companion animal feed.",
@@ -155,7 +156,7 @@ const defs: Application[] = [
     slug: "agriculture",
     name: "Agriculture",
     title: "Agriculture",
-    image: "/images/brand/product-amino-acids.webp",
+    image: CDN_BASE + "/images/brand/product-amino-acids.webp",
     sector: "Food & Nutrition",
     description:
       "Nutrient intermediates for biostimulants, plant nutrition, and crop-protection formulations.",
@@ -168,7 +169,7 @@ const defs: Application[] = [
     slug: "industrial-chemicals",
     name: "Industrial Chemicals",
     title: "Industrial Chemicals",
-    image: "/images/brand/product-amino-acids.webp",
+    image: CDN_BASE + "/images/brand/product-amino-acids.webp",
     sector: "Industrial & Specialty",
     description:
       "Amino acids and specialty intermediates for metal treatment, chelation, surface care, and process chemistry.",

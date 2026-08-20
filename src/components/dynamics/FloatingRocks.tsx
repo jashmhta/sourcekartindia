@@ -1,5 +1,7 @@
 "use client";
 
+import { CDN_BASE } from "../../lib/cdn";
+
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -10,7 +12,7 @@ gsap.registerPlugin(ScrollTrigger);
 /** Positions tuned against original 1440×900 hero */
 const rocks = [
   {
-    src: "/images/hero-rock.png",
+    src: CDN_BASE + "/images/hero-rock.png",
     // Original main rock dominates center-right of 1440 viewport
     className:
       "absolute right-[-6%] top-[2%] w-[min(68vw,820px)] md:right-[-2%] md:top-[0%] lg:right-[1%]",
@@ -21,7 +23,7 @@ const rocks = [
     priority: true,
   },
   {
-    src: "/images/sat-bl.png",
+    src: CDN_BASE + "/images/sat-bl.png",
     className:
       "absolute bottom-[12%] left-[-2%] w-[min(28vw,300px)] md:bottom-[14%] md:left-[1%]",
     depth: 1.35,
@@ -30,7 +32,7 @@ const rocks = [
     rot: 16,
   },
   {
-    src: "/images/sat-br.png",
+    src: CDN_BASE + "/images/sat-br.png",
     className:
       "absolute bottom-[6%] right-[0%] w-[min(18vw,220px)] md:bottom-[8%] md:right-[2%]",
     depth: 1.1,
@@ -39,7 +41,7 @@ const rocks = [
     rot: -14,
   },
   {
-    src: "/images/sat-tr.png",
+    src: CDN_BASE + "/images/sat-tr.png",
     className:
       "absolute right-[12%] top-[5%] w-[min(11vw,120px)] md:right-[14%] md:top-[4%]",
     depth: 1.75,

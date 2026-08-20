@@ -1,3 +1,4 @@
+import { CDN_BASE } from "../lib/cdn";
 import { PageHero } from "./PageHero";
 import { Button } from "./ui/Button";
 import { Img } from "./ui/Img";
@@ -48,7 +49,7 @@ export function IndividualProductPage({
         eyebrow={`Products · ${product.categoryTitle}`}
         title={product.name}
         subtitle={`${product.description} CAS: ${product.cas}.`}
-        bgImage={`/images/products/${product.slug}.png`}
+        bgImage={`${CDN_BASE}/images/products/${product.slug}.png`}
         showScroll
       >
         <div className="mt-10 flex flex-wrap gap-4">
@@ -113,7 +114,7 @@ export function IndividualProductPage({
             <Reveal delay={0.1}>
               <div className="relative aspect-square overflow-hidden rounded-[24px] bg-white shadow-sm">
                 <Img
-                  src={`/images/products/${product.slug}.png`}
+                  src={`${CDN_BASE}/images/products/${product.slug}.png`}
                   alt={`${product.name}, ${brand.name}`}
                   fill
                   sizes="(min-width:1024px) 40vw, 100vw"

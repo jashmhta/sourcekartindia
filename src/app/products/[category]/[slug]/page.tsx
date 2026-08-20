@@ -1,3 +1,4 @@
+import { CDN_BASE } from "../../../../lib/cdn";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { individualProducts } from "@/lib/products-full";
@@ -28,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: product.description,
       images: [
         {
-          url: `/images/products/${product.slug}.png`,
+          url: `${CDN_BASE}/images/products/${product.slug}.png`,
           alt: product.name,
         },
       ],
@@ -38,7 +39,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       card: "summary_large_image",
       title: `${product.name} | ${brand.name}`,
       description: product.description,
-      images: [`/images/products/${product.slug}.png`],
+      images: [`${CDN_BASE}/images/products/${product.slug}.png`],
     },
   };
 }

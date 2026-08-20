@@ -1,5 +1,7 @@
 "use client";
 
+import { CDN_BASE } from "../../lib/cdn";
+
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -108,11 +110,11 @@ export function Hero() {
           playsInline
           preload="metadata"
         >
-          <source src="/videos/hero-warehouse-1.mp4" type="video/mp4" />
+          <source src={CDN_BASE + "/videos/hero-warehouse-1.mp4"} type="video/mp4" />
         </video>
         {/* Fallback image */}
         <Img
-          src="/images/brand/warehouse-interior.webp"
+          src={CDN_BASE + "/images/brand/warehouse-interior.webp"}
           alt=""
           fill
           priority

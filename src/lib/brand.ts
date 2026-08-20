@@ -1,3 +1,4 @@
+import { CDN_BASE } from "./cdn";
 /** SourceKart brand + product catalogue */
 
 export const brand = {
@@ -8,7 +9,7 @@ export const brand = {
     "SourceKart is a sourcing and distribution company focused on high-quality nutraceutical, food and health ingredients. We connect manufacturers with reliable sources for amino acids, vitamins, minerals, proteins, sweeteners, extracts and other specialty ingredients.",
   url: "https://www.sourcekartindia.com",
   gst: "27GFSPB5688J1ZL",
-  logo: "/images/brand/logo-final.webp",
+  logo: CDN_BASE + "/images/brand/logo-final.webp",
   email: {
     primary: "soucekart@gmail.com",
     sales: "soucekart@gmail.com",
@@ -50,7 +51,7 @@ export const products: Product[] = [
     title: "Vitamins",
     short: "Vitamin portfolio",
     href: "/products/vitamins",
-    image: "/images/brand/product-vitamins.webp",
+    image: CDN_BASE + "/images/brand/product-vitamins.webp",
     blurb:
       "Feed and food-grade vitamin premises and single units, from biotin to vitamin K1, formulated for animal nutrition, pharmaceuticals, and nutraceuticals.",
     items: [
@@ -70,7 +71,7 @@ export const products: Product[] = [
     title: "Amino Acids",
     short: "Amino acid range",
     href: "/products/amino-acids",
-    image: "/images/brand/product-amino-acids.webp",
+    image: CDN_BASE + "/images/brand/product-amino-acids.webp",
     blurb:
       "A broad portfolio of amino acids for nutraceuticals, sports nutrition, food, feed, and cosmetics, supplied with CAS-referenced documentation and consistent purity.",
     items: [
@@ -122,7 +123,7 @@ export const products: Product[] = [
     title: "Herbal Extracts",
     short: "Botanical actives",
     href: "/products/herbal-extracts",
-    image: "/images/brand/product-herbal-extracts.webp",
+    image: CDN_BASE + "/images/brand/product-herbal-extracts.webp",
     blurb:
       "Standardised plant extracts and bioactives for supplements, beverages, and wellness formulations, clean and traceable from source to shelf.",
     items: [
@@ -140,7 +141,7 @@ export const products: Product[] = [
     title: "Nutraceuticals",
     short: "Functional ingredients",
     href: "/products/nutraceuticals",
-    image: "/images/brand/product-nutraceuticals.webp",
+    image: CDN_BASE + "/images/brand/product-nutraceuticals.webp",
     blurb:
       "Functional and specialty ingredients for dietary supplements, from coenzyme Q10 and creatine variants to nootropics, sweeteners, and joint-health actives.",
     items: [
@@ -174,7 +175,7 @@ export const products: Product[] = [
     title: "Sweeteners",
     short: "Sugar alternatives",
     href: "/products/sweeteners",
-    image: "/images/brand/product-sweeteners.webp",
+    image: CDN_BASE + "/images/brand/product-sweeteners.webp",
     blurb:
       "High-intensity and polyol sweeteners for food, beverage, and confectionery formulations, from sucralose and stevia-adjacent options to xylitol and erythritol.",
     items: [
@@ -196,7 +197,7 @@ export const products: Product[] = [
     title: "Nucleotides",
     short: "NAD+ & nucleotide actives",
     href: "/products/nucleotides",
-    image: "/images/brand/product-nucleotides.webp",
+    image: CDN_BASE + "/images/brand/product-nucleotides.webp",
     blurb:
       "Nucleotides and NAD+ precursors, including NMN, NR Chloride, and nicotinamide adenine dinucleotide, for longevity and cellular-health formulations.",
     items: [
@@ -217,7 +218,7 @@ export const products: Product[] = [
     title: "Proteins",
     short: "Plant & dairy proteins",
     href: "/products/proteins",
-    image: "/images/brand/product-proteins.webp",
+    image: CDN_BASE + "/images/brand/product-proteins.webp",
     blurb:
       "Plant-based and dairy proteins for sports nutrition, functional foods, and beverages, clean label and backed by full documentation.",
     items: ["Pea Protein", "Rice Protein Powder", "Whey Protein Concentrate"],
@@ -227,7 +228,7 @@ export const products: Product[] = [
     title: "Sports Nutrition",
     short: "Performance actives",
     href: "/products/sports-nutrition",
-    image: "/images/brand/product-sports-nutrition.webp",
+    image: CDN_BASE + "/images/brand/product-sports-nutrition.webp",
     blurb:
       "Performance and recovery ingredients for sports nutrition brands, from creatine monohydrate and beta alanine to BCAA, EAA, and citrulline blends.",
     items: [

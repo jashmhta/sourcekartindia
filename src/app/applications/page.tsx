@@ -1,3 +1,4 @@
+import { CDN_BASE } from "../../lib/cdn";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHero } from "@/components/PageHero";
@@ -27,7 +28,7 @@ export default function ApplicationsPage() {
         eyebrow="Industries · Sectors"
         title="Where Our Ingredients Work"
         subtitle="8 industries across Food & Nutrition, Health & Wellness, and Industrial & Specialty, supplied with premium ingredients from one roof in Mumbai."
-        bgImage="/images/brand/banner1.webp"
+        bgImage={CDN_BASE + "/images/brand/banner1.webp"}
         showScroll
       />
       <section id="content" className="section-light py-16 md:py-24">

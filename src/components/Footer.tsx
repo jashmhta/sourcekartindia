@@ -3,13 +3,14 @@ import Image from "next/image";
 import { footer } from "@/lib/nav";
 import { brand } from "@/lib/brand";
 import { Button } from "./ui/Button";
+import { CDN_BASE } from "@/lib/cdn";
 
 export function FooterCta() {
   return (
     <section className="relative overflow-hidden bg-alethia-dark">
       <div
         className="absolute inset-0 bg-cover bg-center opacity-45"
-        style={{ backgroundImage: "url(/images/cta-bg.webp)" }}
+        style={{ backgroundImage: `url(${CDN_BASE}/images/cta-bg.webp)` }}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-alethia-dark/70 via-alethia-dark/80 to-alethia-dark" />
       <div className="site-container relative z-10 flex min-h-[70vh] flex-col items-center justify-center py-28 text-center">
