@@ -7,9 +7,15 @@ import { products, brand } from "@/lib/brand";
 import { ItemListSchema, BreadcrumbSchema } from "@/components/Schema";
 
 export const metadata: Metadata = {
-  title: "Products",
-  description: `Explore ${brand.name} Food & Health ingredients: vitamins, amino acids, herbal extracts, nutraceuticals, sweeteners, nucleotides, proteins, and sports nutrition.`,
+  title: "Products | Food & Health Ingredients Supplier in India",
+  description: `Explore ${brand.name} Food & Health ingredients: vitamins, amino acids, herbal extracts, nutraceuticals, sweeteners, nucleotides, proteins, and sports nutrition. Over 100 individual products with CAS numbers, COA, and competitive pricing from Mumbai, India.`,
   alternates: { canonical: "/products" },
+  openGraph: {
+    title: `Products | ${brand.name}`,
+    description: `Explore ${brand.name} Food & Health ingredients: vitamins, amino acids, herbal extracts, nutraceuticals, sweeteners, nucleotides, proteins, and sports nutrition.`,
+    images: [{ url: "/images/brand/product-amino-acids.webp", alt: "SourceKart Products" }],
+    type: "website",
+  },
 };
 
 export default function ProductsPage() {
@@ -27,7 +33,7 @@ export default function ProductsPage() {
       <PageHero
         eyebrow="Catalogue"
         title="Our Products"
-        subtitle="One stop for a wide range of quality Food & Health ingredients at competitive prices."
+        subtitle="Over 100 individual products across 8 categories. CAS-referenced, documented, and competitively priced. One stop for quality Food & Health ingredients."
         showScroll
       />
       <section id="content" className="section-light py-16 md:py-24">

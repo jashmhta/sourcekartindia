@@ -1,21 +1,14 @@
-import Link from "next/link";
 import { PageHero } from "./PageHero";
 import { Button } from "./ui/Button";
 import { Img } from "./ui/Img";
 import { Reveal } from "./ui/Reveal";
 import type { Product } from "@/lib/brand";
-import { products, brand } from "@/lib/brand";
+import { brand } from "@/lib/brand";
 import { getProductDetail } from "@/lib/productDetails";
-import { applicationsData } from "@/lib/applications";
-import { datasheetsForFamily } from "@/lib/datasheets";
+
 
 export function ProductPage({ product }: { product: Product }) {
   const detail = getProductDetail(product.slug);
-  const familySheets = datasheetsForFamily(product.slug);
-  const others = products.filter((p) => p.slug !== product.slug).slice(0, 4);
-  const relatedApps = detail
-    ? applicationsData.filter((a) => detail.applications.includes(a.slug))
-    : [];
 
   return (
     <>
@@ -133,53 +126,26 @@ export function ProductPage({ product }: { product: Product }) {
         </div>
       </section>
 
-      {/* Technical datasheets */}
-      {familySheets.length > 0 && (
-        <section className="section-light py-14 md:py-20">
-          <div className="site-container">
-            <Reveal>
-              <span className="label-pill">Documentation</span>
-              <h2 className="display-md mt-4 text-alethia-dark">
-                Technical datasheets
-              </h2>
-              <p className="mt-3 max-w-xl text-[15px] text-alethia-dark/60">
-                Read full specifications for every grade directly on the page.
-                COA, MSDS, and additional documents available on request.
-              </p>
-            </Reveal>
-            <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-              {familySheets.map((sheet, i) => (
-                <Reveal key={sheet.slug} delay={(i % 3) * 0.05}>
-                  <Link
-                    href={`/datasheets/${sheet.slug}`}
-                    className="group flex items-center justify-between gap-4 rounded-2xl border border-alethia-dark/10 bg-white px-5 py-4 shadow-sm transition hover:-translate-y-0.5 hover:border-[#5c8a3f]/40 hover:shadow-md"
-                  >
-                    <div className="flex items-center gap-3">
-                      <span className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl bg-[#eef4e6] font-mono text-[10px] font-semibold text-[#5c8a3f]">
-                        SPEC
-                      </span>
-                      <div>
-                        <span className="block text-[14px] font-medium text-alethia-dark">
-                          {sheet.name}
-                        </span>
-                        <span className="mt-0.5 block font-mono text-[10px] uppercase tracking-[0.1em] text-alethia-dark/40">
-                          Full specifications
-                        </span>
-                      </div>
-                    </div>
-                    <span
-                      className="font-mono text-[12px] text-alethia-dark/40 transition group-hover:translate-x-0.5 group-hover:text-[#5c8a3f]"
-                      aria-hidden
-                    >
-                      →
-                    </span>
-                  </Link>
-                </Reveal>
-              ))}
-            </div>
+      {/* Documentation */}
+      <section className="section-light py-14 md:py-20">
+        <div className="site-container">
+          <Reveal>
+            <span className="label-pill">Documentation</span>
+            <h2 className="display-md mt-4 text-alethia-dark">
+              Technical documentation
+            </h2>
+            <p className="mt-3 max-w-xl text-[15px] text-alethia-dark/60">
+              COA, MSDS, and additional documents available on request.
+              Enquire via the contact page or WhatsApp.
+            </p>
+          </Reveal>
+          <div className="mt-8">
+            <Button href="/contact" variant="filled">
+              Request Documentation
+            </Button>
           </div>
-        </section>
-      )}
+        </div>
+      </section>
 
     </>
   );

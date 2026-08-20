@@ -7,7 +7,8 @@ export const brand = {
   description:
     "SourceKart is a sourcing and distribution company focused on high-quality nutraceutical, food and health ingredients. We connect manufacturers with reliable sources for amino acids, vitamins, minerals, proteins, sweeteners, extracts and other specialty ingredients.",
   url: "https://www.sourcekartindia.com",
-  logo: "/images/brand/logo.png",
+  gst: "27GFSPB5688J1ZL",
+  logo: "/images/brand/logo-final.webp",
   email: {
     primary: "soucekart@gmail.com",
     sales: "soucekart@gmail.com",
@@ -27,11 +28,11 @@ export const brand = {
     role: "Founder",
     bio: "Founder of SourceKart India, built on trust, transparency, consistency, and long-term relationships across the nutraceutical, food, and health ingredients industry.",
   },
-  established: "2016",
+  established: "2026",
 } as const;
 
 export const founderStatement =
-  "I believe that every successful business begins with a simple idea and grows through strong relationships. My journey in the nutraceutical ingredients industry has given me the opportunity to work closely with manufacturers, suppliers, and businesses, and along the way, I understood one thing clearly — sourcing is not just about finding a product. It's about finding the right quality, the right source, the right value, and someone you can trust.\n\nThat belief became the foundation of SourceKart India. I wanted to build a company that is more than just a supplier — a company that understands its customers, takes their requirements seriously, and works alongside them to find the right solutions.\n\nAs we build SourceKart India, my vision is to create a sourcing network built on trust, transparency, consistency, and long-term relationships. We are starting with a simple purpose: to make sourcing easier.\n\nAnd while there is a long way to go, I'm excited about what we are building — one relationship, one requirement, and one opportunity at a time. This is just the beginning.";
+  "I believe that every successful business begins with a simple idea and grows through strong relationships. My journey in the nutraceutical ingredients industry has given me the opportunity to work closely with manufacturers, suppliers, and businesses, and along the way, I understood one thing clearly. sourcing is not just about finding a product. It's about finding the right quality, the right source, the right value, and someone you can trust.\n\nThat belief became the foundation of SourceKart India. I wanted to build a company that is more than just a supplier. a company that understands its customers, takes their requirements seriously, and works alongside them to find the right solutions.\n\nAs we build SourceKart India, my vision is to create a sourcing network built on trust, transparency, consistency, and long-term relationships. We are starting with a simple purpose: to make sourcing easier.\n\nAnd while there is a long way to go, I'm excited about what we are building. one relationship, one requirement, and one opportunity at a time. This is just the beginning.";
 
 export type Product = {
   slug: string;
@@ -260,10 +261,8 @@ export const industries = [
 ] as const;
 
 export const stats = [
-  { value: 2016, suffix: "", label: "Established", sub: "From a 50 sq. ft. office to a national distributor" },
-  { value: 8, suffix: "+", label: "Product Categories", sub: "Vitamins to sports nutrition under one roof" },
-  { value: 300, suffix: "+", label: "Ingredients", sub: "Single units and blends sourced globally" },
-  { value: 300, suffix: "+", label: "Clients & Vendors", sub: "MNCs, MSMEs, and trade partners" },
+  { value: 8, suffix: "", label: "Product Categories", sub: "Vitamins to sports nutrition under one roof" },
+  { value: 100, suffix: "+", label: "Individual Products", sub: "Each with CAS reference and full documentation" },
 ] as const;
 
 export const process = [
@@ -308,15 +307,7 @@ export const certifications = [
   { name: "GMP Aligned", desc: "Good manufacturing practice" },
 ] as const;
 
-export const testimonials = [
-  {
-    quote:
-      "SourceKart has been a cornerstone of our supply chain. Diverse product portfolio and prompt delivery services have streamlined our production processes. Team's professionalism and dedication make them our preferred supplier.",
-    name: "Kunal Kothari",
-    role: "Denis Chem Ltd.",
-    location: "India",
-  },
-] as const;
+export const testimonials: readonly never[] = [];
 
 export const team = [
   {

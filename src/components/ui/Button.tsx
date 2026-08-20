@@ -18,14 +18,24 @@ export function Button({
   className = "",
 }: Props) {
   if (variant === "filled") {
+    const isExternal = href.startsWith("mailto:") || href.startsWith("tel:") || href.startsWith("http");
     return (
       <Magnetic strength={0.25}>
-        <Link href={href} className={`btn-filled group ${className}`}>
-          <span>{children}</span>
-          <span className="btn-filled-icon">
-            <ArrowRight className="h-3.5 w-3.5" />
-          </span>
-        </Link>
+        {isExternal ? (
+          <a href={href} className={`btn-filled group ${className}`}>
+            <span>{children}</span>
+            <span className="btn-filled-icon">
+              <ArrowRight className="h-3.5 w-3.5" />
+            </span>
+          </a>
+        ) : (
+          <Link href={href} className={`btn-filled group ${className}`}>
+            <span>{children}</span>
+            <span className="btn-filled-icon">
+              <ArrowRight className="h-3.5 w-3.5" />
+            </span>
+          </Link>
+        )}
       </Magnetic>
     );
   }
@@ -46,14 +56,24 @@ export function Button({
     );
   }
 
+  const isExternal = href.startsWith("mailto:") || href.startsWith("tel:") || href.startsWith("http");
   return (
     <Magnetic strength={0.25}>
-      <Link href={href} className={`btn-primary group ${className}`}>
-        <span>{children}</span>
-        <span className="btn-primary-icon">
-          <ArrowRight className="h-3.5 w-3.5" />
-        </span>
-      </Link>
+      {isExternal ? (
+        <a href={href} className={`btn-primary group ${className}`}>
+          <span>{children}</span>
+          <span className="btn-primary-icon">
+            <ArrowRight className="h-3.5 w-3.5" />
+          </span>
+        </a>
+      ) : (
+        <Link href={href} className={`btn-primary group ${className}`}>
+          <span>{children}</span>
+          <span className="btn-primary-icon">
+            <ArrowRight className="h-3.5 w-3.5" />
+          </span>
+        </Link>
+      )}
     </Magnetic>
   );
 }

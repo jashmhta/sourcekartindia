@@ -335,7 +335,7 @@ body {
   background: #3a4d3b;
 }
 
-/* Accessible focus ring — visible only on keyboard navigation */
+/* Accessible focus ring visible only on keyboard navigation */
 :focus-visible {
   outline: 2px solid var(--alethia-lime);
   outline-offset: 2px;
@@ -364,7 +364,7 @@ button {
   -webkit-tap-highlight-color: transparent;
 }
 
-/* CSS-only hero title entrance — paints immediately (LCP-safe), no JS gating */
+/* CSS-only hero title entrance paints immediately (LCP-safe), no JS gating */
 @keyframes heroTitleIn {
   from {
     transform: translateY(28px);

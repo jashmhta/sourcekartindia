@@ -100,25 +100,24 @@ export function AboutSection() {
               data-about-reveal
               className="display-md mt-5 text-alethia-dark"
             >
-              A trusted name for quality ingredients since {brand.established}
+              A new era of ingredient sourcing
             </h2>
             <p
               data-about-reveal
               className="mt-6 text-[1.05rem] leading-relaxed text-alethia-dark/70"
             >
-              {brand.founder.name}, Managing Director of {brand.name}, has led
-              the company from a modest 50 sq. ft. office in Mumbai to a trusted
-              national distributor of premium Food &amp; Health ingredients,
-              driven by innovation, transparency, and excellence.
+              {brand.founder.name}, Founder of {brand.name}, is building a
+              sourcing and distribution company for premium Food &amp; Health
+              ingredients, driven by trust, transparency, and long-term
+              relationships.
             </p>
             <p
               data-about-reveal
               className="mt-4 text-[1.05rem] leading-relaxed text-alethia-dark/70"
             >
-              From our Mumbai sales office and well-equipped Bhiwandi facility,
-              we supply food-grade and pharma-grade ingredients to
-              multinational corporates, MSMEs, and trade houses. One roof for
-              the ingredient needs of 8 industries.
+              From our Mumbai sales office and Bhiwandi warehouse, we supply
+              food-grade and pharma-grade ingredients to manufacturers across
+              India. One roof for the ingredient needs of 8 industries.
             </p>
 
             <dl

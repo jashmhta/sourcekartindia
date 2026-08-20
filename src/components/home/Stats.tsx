@@ -2,7 +2,7 @@
 
 import { Reveal } from "../dynamics/Reveal";
 import { Counter } from "../dynamics/Counter";
-import { stats } from "@/lib/brand";
+import { stats, brand } from "@/lib/brand";
 
 export function Stats() {
   return (
@@ -11,19 +11,19 @@ export function Stats() {
         <div className="grid gap-8 lg:grid-cols-[1.1fr_1fr] lg:items-end lg:gap-16">
           <Reveal>
             <h2 className="display-xl max-w-3xl text-white">
-              Since {stats[0].value}, supply that industry can count on.
+              {brand.shortName} India: The Source You Trust. The Quality You Need.
             </h2>
           </Reveal>
           <Reveal delay={0.12}>
             <p className="body-lg max-w-md text-white/60">
-              From a 50 sq. ft. office to a national distributor, we have built
-              a reputation on consistent quality, honest pricing, and dispatch
+              A sourcing and distribution company for food and health ingredients,
+              built on consistent quality, honest pricing, and dispatch
               you can plan production around. The numbers tell the story.
             </p>
           </Reveal>
         </div>
 
-        <div className="mt-16 grid gap-px overflow-hidden rounded-[24px] border border-white/10 bg-white/5 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-16 grid gap-px overflow-hidden rounded-[24px] border border-white/10 bg-white/5 sm:mt-20 sm:grid-cols-2 lg:grid-cols-2">
           {stats.map((s, i) => (
             <Reveal key={s.label} delay={0.06 * i}>
               <div className="flex h-full flex-col gap-2 bg-[#0f1f10] p-6 sm:p-8 md:p-10">

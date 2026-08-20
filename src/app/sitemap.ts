@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
-import { brand, products } from "@/lib/brand";
+import { brand } from "@/lib/brand";
+import { individualProducts } from "@/lib/products-full";
 import { applicationsData } from "@/lib/applications";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -22,13 +23,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/terms-of-use",
   ];
 
-  const productRoutes = products.map((p) => p.href);
+  // Category listing routes
+  const categoryRoutes = individualProducts
+    .map((p) => `/products/${p.categorySlug}`)
+    .filter((v, i, arr) => arr.indexOf(v) === i);
+
+  // Individual product routes
+  const productRoutes = individualProducts.map(
+    (p) => `/products/${p.categorySlug}/${p.slug}`
+  );
+
   const applicationRoutes = applicationsData.map(
     (a) => `/applications/${a.slug}`
   );
 
   return [
     ...staticRoutes,
+    ...categoryRoutes,
     ...productRoutes,
     ...applicationRoutes,
   ].map(

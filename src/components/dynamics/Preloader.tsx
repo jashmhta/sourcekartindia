@@ -39,7 +39,6 @@ export function Preloader() {
               animate={{ scale: [1, 1.03, 1] }}
               transition={{ duration: 1.2, repeat: Infinity, ease: "easeInOut" }}
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
               <Image
                 src={brand.logo}
                 alt=""

@@ -94,19 +94,30 @@ export function Hero() {
       id="hero"
       className="relative min-h-[100dvh] overflow-hidden bg-[#0f1f10]"
     >
-      {/* Background image */}
+      {/* Background video */}
       <div
         ref={bgRef}
         className="pointer-events-none absolute inset-0 select-none will-change-transform"
         aria-hidden
       >
+        <video
+          className="h-full w-full object-cover object-center"
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="metadata"
+        >
+          <source src="/videos/hero-warehouse-1.mp4" type="video/mp4" />
+        </video>
+        {/* Fallback image */}
         <Img
-          src="/images/hero/hero-bg.webp"
+          src="/images/brand/warehouse-interior.webp"
           alt=""
           fill
           priority
           sizes="100vw"
-          className="object-cover object-[70%_center] md:object-center"
+          className="object-cover"
         />
         {/* Readability overlays */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#0f1f10]/95 via-[#0f1f10]/60 to-[#0f1f10]/20" />

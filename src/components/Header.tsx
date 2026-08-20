@@ -164,7 +164,6 @@ export function Header() {
             className="liquid-pill flex h-12 items-center rounded-full px-4"
             aria-label={`${brand.name} home`}
           >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
             <Image
               src={brand.logo}
               alt={brand.name}
