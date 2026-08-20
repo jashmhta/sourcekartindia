@@ -52,7 +52,7 @@ export function IndividualProductPage({
       >
         <div className="mt-10 flex flex-wrap gap-4">
           <Button
-            href={`mailto:${brand.email.primary}?subject=${subject}&body=${body}`}
+            href={`mailto:info@sourcekart.in?subject=${subject}&body=${body}`}
             variant="filled"
           >
             Enquire Now
@@ -157,13 +157,12 @@ export function IndividualProductPage({
           </Reveal>
           <div className="mt-10 flex flex-wrap gap-3">
             <Button
-              href={`mailto:${brand.email.primary}?subject=${subject}&body=${body}`}
+              href={`mailto:info@sourcekart.in?subject=${subject}&body=${body}`}
               variant="filled"
             >
               Request Quote
             </Button>
             <a
-              href={brand.whatsapp}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-full border border-alethia-dark/20 px-6 py-3 font-mono text-[12px] font-medium uppercase tracking-[0.08em] text-alethia-dark transition hover:border-alethia-dark/40"

@@ -30,9 +30,9 @@ export default function TermsPage() {
             applicable Indian law. Contact{" "}
             <a
               className="text-alethia-dark underline"
-              href={`mailto:${brand.email.sales}`}
+              href="mailto:info@sourcekart.in"
             >
-              {brand.email.sales}
+              info@sourcekart.in
             </a>{" "}
             for trade enquiries.
           </p>

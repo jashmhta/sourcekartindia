@@ -24,10 +24,10 @@ export default function PrivacyPage() {
             We do not sell personal data. Contact details shared with us may be
             stored for order fulfilment and legitimate business communication.
             For privacy requests, email{" "}
-            <a href={`mailto:${brand.email.primary}`}>{brand.email.primary}</a>.
+            <span>info@sourcekart.in</span>.
           </p>
           <p className="mt-4 text-sm text-alethia-dark/50">
-            Registered office: {brand.address.full}
+            
           </p>
         </div>
       </section>

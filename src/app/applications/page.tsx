@@ -27,7 +27,7 @@ export default function ApplicationsPage() {
       <PageHero
         eyebrow="Industries · Sectors"
         title="Where Our Ingredients Work"
-        subtitle="6 industries across Food & Nutrition, Health & Wellness, and Industrial & Specialty, supplied with premium ingredients from one roof in Mumbai."
+        subtitle="6 industries across Food & Nutrition, Health & Wellness, and Industrial & Specialty, supplied with premium ingredients from one roof."
         bgImage={CDN_BASE + "/images/brand/banner1.webp"}
         showScroll
       />
@@ -85,7 +85,7 @@ export default function ApplicationsPage() {
             </h2>
             <p className="mt-4 max-w-xl text-white/70">
               Tell us your industry and application, our team will recommend
-              grades and arrange competitive supply from Mumbai.
+              grades and arrange competitive supply.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Button href="/contact" variant="filled">

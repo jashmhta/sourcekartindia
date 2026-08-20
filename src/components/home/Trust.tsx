@@ -13,7 +13,7 @@ const steps = [
   },
   {
     n: "03",
-    title: "Timely service with a well-equipped facility at Bhiwandi",
+    title: "Timely service with a well-equipped central facility",
   },
   {
     n: "04",

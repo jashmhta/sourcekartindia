@@ -10,20 +10,6 @@ export const brand = {
   url: "https://www.sourcekartindia.com",
   gst: "27GFSPB5688J1ZL",
   logo: CDN_BASE + "/images/brand/logo-transparent.png",
-  email: {
-    primary: "soucekart@gmail.com",
-    sales: "soucekart@gmail.com",
-  },
-  phones: ["+91 93242 62269"],
-  whatsapp: "https://wa.me/919324262269",
-  address: {
-    line1: "403 / 404, KL Accolade, Road 6",
-    line2: "Golibar, Santacruz East",
-    city: "Mumbai - 400 055",
-    country: "India",
-    full: "403 / 404, KL Accolade, Road 6, Golibar, Santacruz East, Mumbai - 400 055, India",
-  },
-  warehouse: "Domestic manufacturing & warehousing at Kalher, Bhiwandi",
   founder: {
     name: "Jainam Bagadia",
     role: "Founder",
@@ -360,7 +346,7 @@ export const faqs = [
   },
   {
     q: "Which geographies do you serve?",
-    a: "We supply across India from our Mumbai sales office and Bhiwandi facility, and support export enquiries for select ingredients through our IMPEX team. Confirm with our sales team for your destination.",
+    a: "We supply across India and support export enquiries for select ingredients. Confirm with our sales team for your destination.",
   },
   {
     q: "Do you supply samples and small packing?",
@@ -372,7 +358,7 @@ export const faqs = [
   },
   {
     q: "How quickly can you dispatch?",
-    a: "Stocked items from our Bhiwandi facility dispatch within 1-3 working days. Make-to-order or bulk loads follow the manufacturer lead time, which we confirm at quotation.",
+    a: "Stocked items dispatch within 1-3 working days. Make-to-order or bulk loads follow the manufacturer lead time, which we confirm at quotation.",
   },
 ] as const;
 
@@ -391,7 +377,7 @@ export const sustainabilityPillars = [
   },
   {
     title: "Responsible Logistics",
-    body: "Consolidated dispatch from our central Bhiwandi facility cuts repeated transport legs and the emissions per delivery.",
+    body: "Consolidated dispatch from our central facility cuts repeated transport legs and the emissions per delivery.",
   },
 ] as const;
 

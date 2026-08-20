@@ -66,7 +66,7 @@ export const footer = {
     },
     {
       label: "email sales",
-      href: "mailto:soucekart@gmail.com",
+      href: "mailto:info@sourcekart.in",
     },
   ],
 } as const;

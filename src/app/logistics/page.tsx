@@ -91,10 +91,10 @@ export default function LogisticsPage() {
         <div className="site-container">
           <div className="rounded-[28px] bg-alethia-dark p-8 text-white md:p-12">
             <h2 className="display-md max-w-2xl">
-              {brand.warehouse}
+              Our Central Facility
             </h2>
             <p className="mt-4 max-w-xl text-white/70">
-              Our Bhiwandi facility is the operational heart of {brand.name} -
+              Our central facility is the operational heart of {brand.name} -
               central, equipped, and staffed to keep your supply moving.
             </p>
           </div>
