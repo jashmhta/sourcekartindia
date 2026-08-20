@@ -156,7 +156,7 @@ const defs: Application[] = [
     slug: "agriculture",
     name: "Agriculture",
     title: "Agriculture",
-    image: CDN_BASE + "/images/brand/product-amino-acids.webp",
+    image: CDN_BASE + "/images/brand/product-industrial-chemicals.webp",
     sector: "Food & Nutrition",
     description:
       "Nutrient intermediates for biostimulants, plant nutrition, and crop-protection formulations.",
@@ -169,7 +169,7 @@ const defs: Application[] = [
     slug: "industrial-chemicals",
     name: "Industrial Chemicals",
     title: "Industrial Chemicals",
-    image: CDN_BASE + "/images/brand/product-amino-acids.webp",
+    image: CDN_BASE + "/images/brand/product-industrial-chemicals.webp",
     sector: "Industrial & Specialty",
     description:
       "Amino acids and specialty intermediates for metal treatment, chelation, surface care, and process chemistry.",
