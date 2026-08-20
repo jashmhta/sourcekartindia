@@ -67,10 +67,10 @@ export default function ProcessPage() {
           <div>
             <span className="label-pill">Logistics</span>
             <h2 className="display-lg mt-6 max-w-md text-white">
-              Dispatched from Bhiwandi, coordinated for your timeline.
+              Dispatched from our warehouse, coordinated for your timeline.
             </h2>
             <p className="body-lg mt-6 max-w-md text-white/60">
-              Our central warehouse at Bhiwandi keeps stocked items ready for
+              Our central warehouse keeps stocked items ready for
               1-3 day dispatch. Tanker loads and make-to-order items follow the
               confirmed manufacturer lead time.
             </p>

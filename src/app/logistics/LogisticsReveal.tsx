@@ -26,7 +26,7 @@ export default function LogisticsReveal() {
             <Counter end={300} suffix="+" />
           </p>
           <p className="mt-2 text-sm text-white/50">
-            Active clients served from Bhiwandi
+            Active clients served
           </p>
         </div>
       </div>

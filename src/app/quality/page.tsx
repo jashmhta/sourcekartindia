@@ -24,7 +24,7 @@ const qaSteps = [
   },
   {
     title: "Incoming lot check",
-    body: "Lots arriving at Bhiwandi are checked against the agreed spec and supported with a Certificate of Analysis.",
+    body: "Lots arriving at our warehouse are checked against the agreed spec and supported with a Certificate of Analysis.",
   },
   {
     title: "Documentation pack",

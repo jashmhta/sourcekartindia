@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     "sports nutrition",
     "food ingredients",
     "health ingredients",
-    "ingredient supplier Mumbai",
+    "ingredient supplier India",
     "ingredient supplier India",
     brand.name,
   ],

@@ -10,7 +10,7 @@ import ProductsClient from "./ProductsClient";
 
 export const metadata: Metadata = {
   title: "Products | Food & Health Ingredients Supplier in India",
-  description: `Explore ${brand.name} Food & Health ingredients: vitamins, amino acids, herbal extracts, nutraceuticals, sweeteners, nucleotides, proteins, and sports nutrition. Over 100 individual products with CAS numbers, COA, and competitive pricing from Mumbai, India.`,
+  description: `Explore ${brand.name} Food & Health ingredients: vitamins, amino acids, herbal extracts, nutraceuticals, sweeteners, nucleotides, proteins, and sports nutrition. Over 100 individual products with CAS numbers, COA, and competitive pricing from India.`,
   alternates: { canonical: "/products" },
   openGraph: {
     title: `Products | ${brand.name}`,

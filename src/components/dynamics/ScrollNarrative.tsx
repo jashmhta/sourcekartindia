@@ -26,7 +26,7 @@ const features = [
   {
     id: "04",
     title: "Logistics Ready",
-    body: "Well-trained professional staff and a well-equipped facility at Bhiwandi for central, timely dispatch across India.",
+    body: "Well-trained professional staff and a well-equipped facility for central, timely dispatch across India.",
   },
   {
     id: "05",

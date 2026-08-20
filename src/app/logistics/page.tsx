@@ -8,14 +8,14 @@ import { BreadcrumbSchema } from "@/components/Schema";
 
 export const metadata: Metadata = {
   title: "Logistics & Supply",
-  description: `Warehousing, dispatch, and supply capability at ${brand.name}, Bhiwandi warehouse, India-wide delivery.`,
+  description: `Warehousing, dispatch, and supply capability at ${brand.name} warehouse, India-wide delivery.`,
   alternates: { canonical: "/logistics" },
 };
 
 const capabilities = [
   {
     title: "Central Facility",
-    body: "Well-equipped domestic manufacturing & warehousing facility at Kalher, Bhiwandi, a central location that keeps stocked items ready for fast dispatch across India.",
+    body: "Well-equipped domestic manufacturing & warehousing facility at a central location that keeps stocked items ready for fast dispatch across India.",
   },
   {
     title: "Multi-Grade Inventory",
@@ -37,7 +37,7 @@ export default function LogisticsPage() {
       <BreadcrumbSchema items={[{ name: "Home", path: "/" }, { name: "Logistics", path: "/logistics" }]} />
       <PageHero
         eyebrow="Logistics"
-        title="Stocked, checked, and dispatched from Bhiwandi."
+        title="Stocked, checked, and dispatched from our warehouse."
         subtitle="A central warehouse and trained team mean your order moves from enquiry to dispatch in days, not weeks, with documentation on every lot."
         showScroll
       />
@@ -73,7 +73,7 @@ export default function LogisticsPage() {
               Plan your production around our dispatch.
             </h2>
             <p className="body-lg mt-6 max-w-md text-white/60">
-              Stocked items leave Bhiwandi within 1-3 working days. Make-to-order
+              Stocked items leave our warehouse within 1-3 working days. Make-to-order
               and tanker loads follow the manufacturer lead time, which we
               confirm in writing at quotation.
             </p>

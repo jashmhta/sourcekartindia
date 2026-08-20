@@ -65,7 +65,7 @@ export function Footer() {
               className="mb-4 h-9 w-auto"
             />
             <p className="text-sm leading-relaxed text-white/60">
-              Premium Food & Health ingredients supplier from Mumbai, India.
+              Premium Food & Health ingredients supplier.
             </p>
           </div>
 

@@ -25,7 +25,7 @@ export async function generateMetadata({
   if (!app) return {};
   return {
     title: `${app.title} | Ingredients & Raw Materials`,
-    description: `${app.description} ${brand.name}, Mumbai, trusted Food & Health ingredients supplier since ${brand.established}.`,
+    description: `${app.description} ${brand.name}, trusted Food & Health ingredients supplier since ${brand.established}.`,
     alternates: { canonical: `/applications/${app.slug}` },
     openGraph: {
       title: `${app.title} | ${brand.name}`,

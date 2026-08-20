@@ -96,8 +96,8 @@ export function ProductPage({ product }: { product: Product }) {
               {product.items.length}+ items available under {product.title.toLowerCase()}
             </h2>
             <p className="mt-3 max-w-xl text-[15px] text-alethia-dark/60">
-              Enquire for grades, packaging, and bulk supply from our Mumbai
-              office and Bhiwandi warehouse.
+              Enquire for grades, packaging, and bulk supply from our
+              office and warehouse.
             </p>
           </Reveal>
           <ul className="mt-8 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">

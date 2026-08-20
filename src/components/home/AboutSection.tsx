@@ -92,7 +92,7 @@ export function AboutSection() {
               data-about-reveal
               className="mt-4 text-[1.05rem] leading-relaxed text-alethia-dark/70"
             >
-              From our Mumbai sales office and Bhiwandi warehouse, we supply
+              From our warehouse, we supply
               food-grade and pharma-grade ingredients to manufacturers across
               India. One roof for the ingredient needs of 6 industries.
             </p>

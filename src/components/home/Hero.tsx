@@ -143,7 +143,7 @@ export function Hero() {
               className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#c6f19d]/30 bg-[#c6f19d]/10 px-4 py-1.5 font-mono text-[11px] uppercase tracking-[0.1em] text-[#c6f19d]"
             >
               <span className="h-1.5 w-1.5 rounded-full bg-[#c6f19d]" />
-              The Source You Trust. The Quality You Need.
+              SourceKart India
             </p>
             <h1 className="display-xl hero-title-in text-[#f5f4f2]">
               Food &amp; Health Ingredients
@@ -158,7 +158,7 @@ export function Hero() {
             >
               Vitamins, amino acids, herbal extracts, nutraceuticals,
               sweeteners, proteins, and sports nutrition, quality-checked,
-              documented, and dispatched from Mumbai since {brand.established}.
+              documented, and dispatched since {brand.established}.
             </p>
             <div
               data-hero-reveal

@@ -274,7 +274,7 @@ export const process = [
   {
     n: "04",
     title: "Dispatch & Logistics",
-    body: "Packed, labelled, and shipped from our Bhiwandi facility, coordinated for timely delivery across India.",
+    body: "Packed, labelled, and shipped from our facility, coordinated for timely delivery across India.",
     tag: "Day 3-5",
   },
   {

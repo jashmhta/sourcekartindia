@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!firstProduct) return { title: "Products" };
   return {
     title: `${firstProduct.categoryTitle} | ${brand.name}`,
-    description: `Explore our ${firstProduct.categoryTitle.toLowerCase()} range from ${brand.name}. ${individualProducts.filter((p) => p.categorySlug === category).length}+ products with CAS-referenced documentation, COA, and competitive pricing from Mumbai, India.`,
+    description: `Explore our ${firstProduct.categoryTitle.toLowerCase()} range from ${brand.name}. ${individualProducts.filter((p) => p.categorySlug === category).length}+ products with CAS-referenced documentation, COA, and competitive pricing from India.`,
     alternates: { canonical: `/products/${category}` },
     openGraph: {
       title: `${firstProduct.categoryTitle} | ${brand.name}`,
