@@ -45,7 +45,6 @@ export function Footer() {
               { v: "Est. 2026", l: "Established" },
               { v: "8", l: "Product categories" },
               { v: "100+", l: "Individual products" },
-              { v: "Bhiwandi", l: "Warehouse & dispatch" },
             ].map((s) => (
               <div key={s.l} className="text-center sm:text-left">
                 <p className="text-[1.5rem] font-medium leading-none tracking-[-0.02em] text-alethia-lime">
@@ -69,12 +68,6 @@ export function Footer() {
             <p className="text-sm leading-relaxed text-white/60">
               Premium Food & Health ingredients supplier from Mumbai, India.
             </p>
-          </div>
-
-          <div className="mb-12 flex flex-wrap gap-x-10 gap-y-3 font-mono text-[12px] uppercase tracking-[0.08em] text-white/50">
-            {footer.locations.map((loc) => (
-              <span key={loc}>{loc}</span>
-            ))}
           </div>
 
           <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">

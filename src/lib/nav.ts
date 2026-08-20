@@ -19,7 +19,6 @@ export const nav = {
 } as const;
 
 export const footer = {
-  locations: ["Mumbai, India", "Factory · Bhiwandi"],
   columns: [
     {
       title: "company",
