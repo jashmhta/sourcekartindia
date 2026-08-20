@@ -1,0 +1,17 @@
+{
+  "name": "SourceKart — Food & Health Ingredients",
+  "short_name": "SourceKart",
+  "description": "One stop for quality Food & Health ingredients at competitive prices and timely service since 2016.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f1f10",
+  "theme_color": "#0f1f10",
+  "icons": [
+    {
+      "src": "/images/brand/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
