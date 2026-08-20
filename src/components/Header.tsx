@@ -81,10 +81,10 @@ export function Header() {
         >
           <Link href="/" className="relative z-10 flex items-center gap-2.5">
             <Image
-              src={`${CDN_BASE}/images/brand/logo-header.png`}
+              src={`${CDN_BASE}/images/brand/logo-dark-bg.png`}
               alt={brand.name}
-              width={414}
-              height={144}
+              width={2127}
+              height={739}
               priority
               unoptimized
               className="h-9 w-auto max-w-[200px] object-contain object-left"
@@ -166,10 +166,10 @@ export function Header() {
             aria-label={`${brand.name} home`}
           >
             <Image
-              src={`${CDN_BASE}/images/brand/logo-mobile.png`}
+              src={`${CDN_BASE}/images/brand/logo-dark-bg.png`}
               alt={brand.name}
-              width={276}
-              height={96}
+              width={2127}
+              height={739}
               priority
               unoptimized
               className="h-6 w-auto max-w-[140px] object-contain object-left"

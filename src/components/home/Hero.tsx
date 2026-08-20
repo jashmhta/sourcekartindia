@@ -21,11 +21,19 @@ export function Hero() {
   const bgRef = useRef<HTMLDivElement>(null);
   const fadeRef = useRef<HTMLDivElement>(null);
   const chipRef = useRef<HTMLDivElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
     const section = sectionRef.current;
     if (!section) return;
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    // Ensure video plays
+    if (videoRef.current) {
+      videoRef.current.play().catch((err) => {
+        console.log("Video autoplay failed:", err);
+      });
+    }
 
     const ctx = gsap.context(() => {
       // Entrance animation
@@ -103,6 +111,7 @@ export function Hero() {
         aria-hidden
       >
         <video
+          ref={videoRef}
           className="h-full w-full object-cover object-center"
           autoPlay
           loop

@@ -40,7 +40,7 @@ export default function Preloader() {
             className="relative"
           >
             <Image
-              src={`${CDN_BASE}/images/brand/logo-transparent-clean.png`}
+              src={`${CDN_BASE}/images/brand/logo-preloader.png`}
               alt="SourceKart"
               width={2127}
               height={739}
