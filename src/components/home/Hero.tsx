@@ -26,7 +26,6 @@ export function Hero() {
   const sectionRef = useRef<HTMLElement>(null);
   const bgRef = useRef<HTMLDivElement>(null);
   const fadeRef = useRef<HTMLDivElement>(null);
-  const chipRef = useRef<HTMLDivElement>(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   // Auto-switch images every 2 seconds
@@ -92,15 +91,6 @@ export function Hero() {
           },
         });
       }
-      if (chipRef.current && !reduce) {
-        gsap.to(chipRef.current, {
-          y: -8,
-          duration: 3.4,
-          ease: "sine.inOut",
-          yoyo: true,
-          repeat: -1,
-        });
-      }
     }, section);
 
     return () => ctx.revert();
@@ -140,23 +130,6 @@ export function Hero() {
         <div className="absolute inset-x-0 bottom-0 h-[30%] bg-gradient-to-t from-[#0f1f10] to-transparent" />
       </div>
 
-      {/* Est. chip */}
-      <div
-        ref={chipRef}
-        className="pointer-events-none absolute z-[5] hidden lg:block"
-        style={{ left: "62%", top: "44%" }}
-        aria-hidden
-      >
-        <div className="absolute -left-16 -top-14 h-[120px] w-[140px] rounded-sm border border-white/15" />
-        <div className="inline-flex rounded-[2px] bg-[#f3f3f1] px-[7px] py-[3px] font-mono text-[10px] font-medium leading-none tracking-[0.01em] text-[rgba(15,30,15,0.78)]">
-          Est. {brand.established}
-        </div>
-        <p className="mt-1.5 max-w-[210px] font-mono text-[9px] uppercase leading-[1.4] tracking-[0.04em] text-[#f5f4f2]/75">
-          Food &amp; Health Ingredients
-          <br />
-          Vitamins · Amino Acids · Sweeteners
-        </p>
-      </div>
 
       <div
         ref={fadeRef}

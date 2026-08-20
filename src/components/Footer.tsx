@@ -60,26 +60,15 @@ export function Footer() {
         </div>
         <div className="site-container py-16">
           <div className="mb-10 max-w-xl">
-            <Image
-              src={brand.logo}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={`${CDN_BASE}/images/brand/logo-white.png`}
               alt={brand.name}
-              width={800}
-              height={800}
               className="mb-4 h-9 w-auto"
             />
             <p className="text-sm leading-relaxed text-white/60">
-              {brand.address.full}
+              Premium Food & Health ingredients supplier from Mumbai, India.
             </p>
-            <div className="mt-3 flex flex-col gap-1 font-mono text-[12px] text-white/55">
-              {brand.phones.slice(0, 2).map((p) => (
-                <a key={p} href={`tel:${p.replace(/\s/g, "")}`} className="inline-block py-1 hover:text-alethia-lime">
-                  {p}
-                </a>
-              ))}
-              <a href={`mailto:${brand.email.sales}`} className="inline-block py-1 hover:text-alethia-lime">
-                {brand.email.sales}
-              </a>
-            </div>
           </div>
 
           <div className="mb-12 flex flex-wrap gap-x-10 gap-y-3 font-mono text-[12px] uppercase tracking-[0.08em] text-white/50">

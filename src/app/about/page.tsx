@@ -138,16 +138,7 @@ export default function AboutPage() {
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
-            <div className="mt-10 grid gap-10 lg:grid-cols-[1fr_1.6fr] lg:items-start">
-              <div className="relative aspect-[3/4] overflow-hidden rounded-[28px]">
-                <Img
-                  src={CDN_BASE + "/images/about/founder.webp"}
-                  alt={`${brand.founder.name}, Founder of ${brand.name}`}
-                  fill
-                  sizes="(min-width:1024px) 30vw, 80vw"
-                  className="object-cover"
-                />
-              </div>
+            <div className="mt-10">
               <blockquote className="space-y-4 border-l-2 border-alethia-lime pl-6 md:pl-8">
                 {founderStatement.split("\n\n").map((para, i) => (
                   <p
