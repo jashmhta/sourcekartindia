@@ -2,7 +2,7 @@
 
 import { CDN_BASE } from "../../lib/cdn";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Button } from "../ui/Button";
@@ -12,8 +12,14 @@ import { brand } from "@/lib/brand";
 
 gsap.registerPlugin(ScrollTrigger);
 
+const heroImages = [
+  `${CDN_BASE}/images/brand/warehouse-interior-4k.webp`,
+  `${CDN_BASE}/images/brand/warehouse-quality-4k.webp`,
+  `${CDN_BASE}/images/brand/warehouse-dispatch-4k.webp`,
+];
+
 /**
- * Hero - cinematic eco-chemistry background image.
+ * Hero - cinematic eco-chemistry background with auto-switching 4K images.
  * The 3D rock/island lives in the next section (ScrollNarrative).
  */
 export function Hero() {
@@ -21,19 +27,21 @@ export function Hero() {
   const bgRef = useRef<HTMLDivElement>(null);
   const fadeRef = useRef<HTMLDivElement>(null);
   const chipRef = useRef<HTMLDivElement>(null);
-  const videoRef = useRef<HTMLVideoElement>(null);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  // Auto-switch images every 2 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % heroImages.length);
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   useEffect(() => {
     const section = sectionRef.current;
     if (!section) return;
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-    // Ensure video plays
-    if (videoRef.current) {
-      videoRef.current.play().catch((err) => {
-        console.log("Video autoplay failed:", err);
-      });
-    }
 
     const ctx = gsap.context(() => {
       // Entrance animation
@@ -104,26 +112,29 @@ export function Hero() {
       id="hero"
       className="relative min-h-[100dvh] overflow-hidden bg-[#0f1f10]"
     >
-      {/* Background video */}
+      {/* Background image carousel */}
       <div
         ref={bgRef}
         className="pointer-events-none absolute inset-0 select-none will-change-transform"
         aria-hidden
       >
-        <video
-          ref={videoRef}
-          className="h-full w-full object-cover object-center"
-          autoPlay
-          loop
-          muted
-          playsInline
-          preload="auto"
-          poster={CDN_BASE + "/images/brand/warehouse-interior.webp"}
-        >
-          <source src={CDN_BASE + "/videos/hero-warehouse-1.mp4"} type="video/mp4" />
-          <source src={CDN_BASE + "/videos/hero-warehouse-2.mp4"} type="video/mp4" />
-          <source src={CDN_BASE + "/videos/hero-warehouse-3.mp4"} type="video/mp4" />
-        </video>
+        {heroImages.map((src, index) => (
+          <div
+            key={src}
+            className={`absolute inset-0 transition-opacity duration-1000 ${
+              index === currentImageIndex ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            <Img
+              src={src}
+              alt=""
+              fill
+              priority={index === 0}
+              sizes="100vw"
+              className="object-cover"
+            />
+          </div>
+        ))}
         {/* Readability overlays */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#0f1f10]/95 via-[#0f1f10]/60 to-[#0f1f10]/20" />
         <div className="absolute inset-x-0 bottom-0 h-[30%] bg-gradient-to-t from-[#0f1f10] to-transparent" />
