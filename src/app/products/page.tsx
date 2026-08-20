@@ -42,6 +42,7 @@ export default function ProductsPage() {
         eyebrow="Catalogue"
         title="Our Products"
         subtitle="Over 100 individual products across 8 categories. CAS-referenced, documented, and competitively priced. One stop for quality Food & Health ingredients."
+        bgImage={`${CDN_BASE}/images/brand/product-amino-acids.webp`}
         showScroll
       />
 

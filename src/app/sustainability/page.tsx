@@ -1,3 +1,4 @@
+import { CDN_BASE } from "../../lib/cdn";
 import type { Metadata } from "next";
 import { PageHero } from "@/components/PageHero";
 import { Button } from "@/components/ui/Button";
@@ -20,6 +21,7 @@ export default function SustainabilityPage() {
         eyebrow="Sustainability"
         title="Responsible ingredients, traceable supply."
         subtitle="We prioritise certified clean supply chains, compliant documentation, and sourcing choices that let you prove your own claims."
+        bgImage={`${CDN_BASE}/images/brand/warehouse-interior.webp`}
         showScroll
       />
 

@@ -1,3 +1,4 @@
+import { CDN_BASE } from "../../lib/cdn";
 import type { Metadata } from "next";
 import { PageHero } from "@/components/PageHero";
 import { Button } from "@/components/ui/Button";
@@ -29,6 +30,7 @@ export default function ProcessPage() {
         eyebrow="Our Process"
         title="From enquiry to after-sales. Five disciplined steps."
         subtitle="A transparent supply chain you can plan production around. You always know which step your order is on and what lands when."
+        bgImage={`${CDN_BASE}/images/brand/warehouse-dispatch.webp`}
         showScroll
       />
 

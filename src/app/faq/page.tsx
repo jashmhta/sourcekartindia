@@ -1,3 +1,4 @@
+import { CDN_BASE } from "../../lib/cdn";
 import type { Metadata } from "next";
 import { PageHero } from "@/components/PageHero";
 import { Button } from "@/components/ui/Button";
@@ -25,6 +26,7 @@ export default function FaqPage() {
         eyebrow="FAQ"
         title="Questions we answer every day."
         subtitle="From minimum order quantity to documentation and dispatch timelines: the practical details buyers need before they reach out."
+        bgImage={`${CDN_BASE}/images/brand/warehouse-quality.webp`}
         showScroll
       />
 

@@ -1,3 +1,4 @@
+import { CDN_BASE } from "../../lib/cdn";
 import type { Metadata } from "next";
 import { PageHero } from "@/components/PageHero";
 import { Button } from "@/components/ui/Button";
@@ -43,6 +44,7 @@ export default function QualityPage() {
         eyebrow="Quality & Compliance"
         title="Every lot. Documented. Checked. Repeatable."
         subtitle="Quality is not a marketing line. It is the documentation and checks that let you plan production around our dispatch."
+        bgImage={`${CDN_BASE}/images/brand/warehouse-quality.webp`}
         showScroll
       />
 

@@ -16,6 +16,7 @@ export function Img({
   style,
   fill = false,
   sizes,
+  unoptimized = false,
 }: {
   src: string;
   alt?: string;
@@ -26,6 +27,7 @@ export function Img({
   style?: React.CSSProperties;
   fill?: boolean;
   sizes?: string;
+  unoptimized?: boolean;
 }) {
   return (
     <Image
@@ -41,6 +43,7 @@ export function Img({
       loading={priority ? "eager" : "lazy"}
       decoding="async"
       draggable={false}
+      unoptimized={unoptimized}
     />
   );
 }

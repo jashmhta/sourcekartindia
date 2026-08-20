@@ -1,3 +1,4 @@
+import { CDN_BASE } from "../../lib/cdn";
 import type { Metadata } from "next";
 import { PageHero } from "@/components/PageHero";
 import { brand } from "@/lib/brand";
@@ -17,6 +18,7 @@ export default function ContactPage() {
         eyebrow="Contact"
         title="Let’s Talk"
         subtitle="One stop for quality Food & Health ingredients at competitive prices. Call or email with your requirement, and we take it from there."
+        bgImage={`${CDN_BASE}/images/brand/warehouse-interior.webp`}
       >
         <div className="mt-12 grid max-w-4xl gap-8 md:grid-cols-3">
           <div>

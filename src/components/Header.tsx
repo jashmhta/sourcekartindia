@@ -86,7 +86,7 @@ export function Header() {
               width={2127}
               height={739}
               priority
-              quality={100}
+              unoptimized
               className="h-9 w-auto max-w-[200px] object-contain object-left"
             />
           </Link>
@@ -171,7 +171,7 @@ export function Header() {
               width={2127}
               height={739}
               priority
-              quality={100}
+              unoptimized
               className="h-6 w-auto max-w-[140px] object-contain object-left"
             />
           </Link>

@@ -70,7 +70,7 @@ export function Preloader() {
                 width={2127}
                 height={739}
                 priority
-                quality={100}
+                unoptimized
                 className="h-20 w-auto md:h-24 lg:h-28"
               />
             </motion.div>
