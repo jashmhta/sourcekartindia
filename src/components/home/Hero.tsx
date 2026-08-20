@@ -111,6 +111,8 @@ export function Hero() {
           preload="metadata"
         >
           <source src={CDN_BASE + "/videos/hero-warehouse-1.mp4"} type="video/mp4" />
+          <source src={CDN_BASE + "/videos/hero-warehouse-2.mp4"} type="video/mp4" />
+          <source src={CDN_BASE + "/videos/hero-warehouse-3.mp4"} type="video/mp4" />
         </video>
         {/* Fallback image */}
         <Img
