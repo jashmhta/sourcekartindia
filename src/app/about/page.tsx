@@ -132,7 +132,7 @@ export default function AboutPage() {
       <section className="section-light py-16 md:py-24">
         <div className="site-container">
           <Reveal>
-            <span className="label-pill">Hear It From the Owner</span>
+            <span className="label-pill font-bold">Hear It From the Owner</span>
             <h2 className="display-md mt-5 max-w-2xl text-alethia-dark">
               {brand.founder.name} | Founder, {brand.name}
             </h2>

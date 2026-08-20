@@ -7,8 +7,6 @@ export const nav = {
   })),
   company: [
     { label: "About Us", href: "/about" },
-    { label: "Leadership", href: "/leadership" },
-    { label: "Sustainability", href: "/sustainability" },
   ],
   capabilities: [
     { label: "Our Process", href: "/process" },
@@ -27,8 +25,6 @@ export const footer = {
       title: "company",
       links: [
         { label: "about us", href: "/about" },
-        { label: "leadership", href: "/leadership" },
-        { label: "sustainability", href: "/sustainability" },
         { label: "contact us", href: "/contact" },
       ],
     },
