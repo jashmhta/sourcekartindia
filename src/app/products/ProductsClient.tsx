@@ -126,7 +126,7 @@ export default function ProductsClient({ products, categories }: ProductsClientP
             <Link
               key={p.slug}
               href={`/products/${p.categorySlug}/${p.slug}`}
-              className="group overflow-hidden rounded-[20px] border border-alethia-dark/8 bg-white shadow-sm transition hover:shadow-lg"
+              className="group overflow-hidden rounded-[20px] border border-alethia-dark/8 bg-[#f0f9e8] shadow-sm transition hover:shadow-lg"
             >
               <div className="relative aspect-square overflow-hidden bg-white">
                 <Img
@@ -139,7 +139,7 @@ export default function ProductsClient({ products, categories }: ProductsClientP
               </div>
               <div className="p-4 md:p-5">
                 <span className="label-pill text-[10px]">{p.categoryTitle}</span>
-                <h3 className="mt-2 text-[1rem] font-medium tracking-[-0.01em] text-alethia-dark">
+                <h3 className="mt-2 text-[1rem] font-bold tracking-[-0.01em] text-alethia-dark">
                   {p.name}
                 </h3>
                 <p className="mt-1 font-mono text-[11px] text-alethia-dark/50">

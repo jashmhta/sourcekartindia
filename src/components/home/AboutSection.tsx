@@ -134,6 +134,20 @@ export function AboutSection() {
               </Button>
             </div>
           </div>
+          <div className="relative">
+            <div
+              data-about-image
+              className="relative overflow-hidden rounded-[28px] border border-alethia-dark/10 shadow-lg"
+            >
+              <Img
+                src={CDN_BASE + "/images/about/office.webp"}
+                alt="SourceKart India office"
+                width={1200}
+                height={900}
+                className="h-full w-full object-cover"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
