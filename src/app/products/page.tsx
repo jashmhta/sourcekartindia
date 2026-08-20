@@ -2,7 +2,6 @@ import { CDN_BASE } from "../../lib/cdn";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHero } from "@/components/PageHero";
-import { Img } from "@/components/ui/Img";
 import { ArrowRight } from "@/components/ui/Icons";
 import { products, brand } from "@/lib/brand";
 import { individualProducts } from "@/lib/products-full";

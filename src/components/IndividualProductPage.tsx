@@ -9,10 +9,8 @@ import type { IndividualProduct } from "@/lib/products-full";
 const appLabels: Record<string, string> = {
   "pharmaceuticals": "Pharmaceuticals",
   "nutraceuticals": "Nutraceuticals",
-  "food-and-beverages": "Food & Beverages",
   "sports-nutrition": "Sports Nutrition",
   "animal-nutrition": "Animal Nutrition",
-  "personal-care-and-beauty": "Personal Care & Beauty",
   "industrial-chemicals": "Industrial Chemicals",
 };
 

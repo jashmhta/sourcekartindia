@@ -4,7 +4,7 @@ import { PageHero } from "@/components/PageHero";
 import { Button } from "@/components/ui/Button";
 import { Img } from "@/components/ui/Img";
 import { Reveal } from "@/components/ui/Reveal";
-import { brand, industries, whatWeBring, ourApproach, founderStatement } from "@/lib/brand";
+import { brand, whatWeBring, ourApproach, founderStatement } from "@/lib/brand";
 import { BreadcrumbSchema } from "@/components/Schema";
 import AboutReveal from "./AboutReveal";
 
@@ -182,29 +182,20 @@ export default function AboutPage() {
       {/* Vision / Mission */}
       <AboutReveal />
 
-      {/* Industries */}
-      <section className="section-light py-16 md:py-24">
+      {/* Final CTA */}
+      <section className="section-dark py-16 md:py-24">
         <div className="site-container">
           <Reveal>
-            <span className="label-pill">Industries</span>
-            <h2 className="display-md mt-5 max-w-3xl text-alethia-dark">
+            <h2 className="display-md max-w-3xl text-white">
               Distributing premium ingredients for important segments of
               Indian industry
             </h2>
           </Reveal>
-          <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {industries.map((name, i) => (
-              <Reveal key={name} delay={(i % 3) * 0.05}>
-                <div className="rounded-2xl border border-alethia-dark/10 bg-white px-5 py-4 font-mono text-[12px] uppercase tracking-[0.08em] text-alethia-dark/75">
-                  {name}
-                </div>
-              </Reveal>
-            ))}
-          </div>
-          <div className="mt-12 flex flex-wrap gap-4">
+          <div className="mt-8 flex flex-wrap gap-4">
             <Button href="/contact" variant="filled">
               Get in Touch
             </Button>
+            <Button href="/applications">Application Segments</Button>
           </div>
         </div>
       </section>

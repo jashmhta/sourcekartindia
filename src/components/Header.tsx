@@ -1,7 +1,6 @@
 "use client";
 import { CDN_BASE } from "../lib/cdn";
 import Link from "next/link";
-import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { nav } from "@/lib/nav";
 import { brand } from "@/lib/brand";

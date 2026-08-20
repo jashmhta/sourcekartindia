@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { footer } from "@/lib/nav";
 import { brand } from "@/lib/brand";
 import { Button } from "./ui/Button";

@@ -1,5 +1,5 @@
 import { CDN_BASE } from "./cdn";
-/** SourceKart application segments (8 industries served) */
+/** SourceKart application segments (6 industries served) */
 
 export type Application = {
   slug: string;
@@ -61,29 +61,6 @@ const defs: Application[] = [
     relatedProducts: ["amino-acids", "herbal-extracts", "nutraceuticals", "nucleotides", "sports-nutrition"],
   },
   {
-    slug: "personal-care-and-beauty",
-    name: "Personal Care & Beauty",
-    title: "Personal Care & Beauty",
-    image: CDN_BASE + "/images/brand/product-herbal-extracts.webp",
-    sector: "Health & Wellness",
-    description:
-      "Vitamins, amino acids, and botanical actives for skin, hair, and personal care formulations.",
-    detail:
-      "Personal care formulators use SourceKart ingredients as actives and functional builders in serums, creams, hair care, and colour cosmetics, vitamin E, amino acid derivatives, hyaluronic acid, silymarin, and resveratrol among them. Cosmetic-grade specifications and full documentation support formulation claims and finished-product registrations.",
-    chemicals: [
-      "Vitamin E 50%",
-      "Coenzyme Q10",
-      "Sodium Hyaluronate",
-      "Silymarin 80%",
-      "Resveratrol",
-      "Ginseng Extract",
-      "Grape Seed Extract",
-      "L Cysteine Base",
-      "Allantoin",
-    ],
-    relatedProducts: ["vitamins", "amino-acids", "herbal-extracts", "nutraceuticals"],
-  },
-  {
     slug: "sports-nutrition",
     name: "Sports Nutrition",
     title: "Sports Nutrition",
@@ -105,29 +82,6 @@ const defs: Application[] = [
       "L Arginine Alpha Ketoglutarate",
     ],
     relatedProducts: ["amino-acids", "nutraceuticals", "proteins", "sports-nutrition"],
-  },
-  {
-    slug: "food-and-beverages",
-    name: "Food & Beverages",
-    title: "Food & Beverages",
-    image: CDN_BASE + "/images/brand/product-sweeteners.webp",
-    sector: "Food & Nutrition",
-    description:
-      "Sweeteners, vitamins, and clean-label ingredients for functional foods, dairy, bakery, and beverages.",
-    detail:
-      "Food and beverage processors use SourceKart for high-intensity sweeteners, polyols, vitamin premixes, and plant proteins that meet label claims and regulatory limits. Ingredients are specified by purity, particle size, and sensory profile, with Halal, Kosher, and allergen documentation supporting food-safety management systems and clean-label positioning.",
-    chemicals: [
-      "Sucralose",
-      "Erythritol",
-      "Xylitol",
-      "Allulose",
-      "Aspartame",
-      "Pea Protein",
-      "Whey Protein Concentrate",
-      "Vitamin B5",
-      "Inositol",
-    ],
-    relatedProducts: ["vitamins", "amino-acids", "sweeteners", "proteins"],
   },
   {
     slug: "animal-nutrition",

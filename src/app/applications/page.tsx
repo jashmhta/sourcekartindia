@@ -11,7 +11,7 @@ import { BreadcrumbSchema } from "@/components/Schema";
 
 export const metadata: Metadata = {
   title: "Industries Served",
-  description: `8 industries served by ${brand.name}: food & beverages, animal nutrition, personal care & beauty, sports nutrition, industrial chemicals, agriculture, pharmaceuticals, and nutraceuticals. Premium Food & Health ingredients for every sector.`,
+  description: `6 industries served by ${brand.name}: animal nutrition, agriculture, sports nutrition, industrial chemicals, pharmaceuticals, and nutraceuticals. Premium Food & Health ingredients for every sector.`,
   alternates: { canonical: "/applications" },
 };
 
@@ -27,7 +27,7 @@ export default function ApplicationsPage() {
       <PageHero
         eyebrow="Industries · Sectors"
         title="Where Our Ingredients Work"
-        subtitle="8 industries across Food & Nutrition, Health & Wellness, and Industrial & Specialty, supplied with premium ingredients from one roof in Mumbai."
+        subtitle="6 industries across Food & Nutrition, Health & Wellness, and Industrial & Specialty, supplied with premium ingredients from one roof in Mumbai."
         bgImage={CDN_BASE + "/images/brand/banner1.webp"}
         showScroll
       />

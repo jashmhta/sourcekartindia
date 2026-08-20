@@ -18,7 +18,7 @@ export function IndustriesGrid() {
           </Reveal>
           <Reveal delay={0.1}>
             <p className="body-lg max-w-md text-white/55">
-              These are the eight sectors we serve. Browse what we supply for
+              These are the six sectors we serve. Browse what we supply for
               each, and if you need a specific grade, our technical team will
               point you to the right ingredient.
             </p>
@@ -26,7 +26,13 @@ export function IndustriesGrid() {
         </div>
 
         <div className="mt-12 grid gap-2.5 sm:grid-cols-2 sm:gap-3 lg:grid-cols-3">
-          {industries.map((name, i) => {
+          {industries
+            .filter(
+              (name) =>
+                name !== "Food & Beverages" &&
+                name !== "Personal Care & Beauty"
+            )
+            .map((name, i) => {
             const slug = name.toLowerCase().replace(/ & /g, "-").replace(/ /g, "-");
             return (
               <Reveal key={name} delay={0.03 * i}>

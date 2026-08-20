@@ -3,7 +3,6 @@
 import { CDN_BASE } from "../../lib/cdn";
 
 import { useEffect, useRef } from "react";
-import Link from "next/link";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Button } from "../ui/Button";
@@ -95,7 +94,7 @@ export function AboutSection() {
             >
               From our Mumbai sales office and Bhiwandi warehouse, we supply
               food-grade and pharma-grade ingredients to manufacturers across
-              India. One roof for the ingredient needs of 8 industries.
+              India. One roof for the ingredient needs of 6 industries.
             </p>
 
             <dl
@@ -123,7 +122,7 @@ export function AboutSection() {
                   Industries
                 </dt>
                 <dd className="mt-1 text-[1.5rem] font-medium tracking-[-0.03em] text-alethia-dark">
-                  8
+                  6
                 </dd>
               </div>
             </dl>
