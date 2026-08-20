@@ -27,7 +27,7 @@ export function FooterCta() {
           </Button>
         </div>
         <p className="pointer-events-none mt-20 select-none font-geist text-[clamp(2.5rem,12vw,8rem)] font-medium leading-none tracking-[-0.04em] text-alethia-lime/90">
-          SourceKart
+          SourceKart India
         </p>
       </div>
     </section>

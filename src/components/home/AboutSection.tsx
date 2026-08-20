@@ -68,30 +68,6 @@ export function AboutSection() {
     >
       <div className="site-container">
         <div className="grid gap-12 lg:grid-cols-[1fr_1.15fr] lg:gap-16">
-          {/* Founder image + years badge */}
-          <div className="relative" data-about-reveal>
-            <div
-              data-about-image
-              className="relative aspect-[3/4] max-h-[640px] overflow-hidden rounded-[28px]"
-            >
-              <Img
-                src={CDN_BASE + "/images/about/founder.webp"}
-                alt={`${brand.founder.name}, ${brand.founder.role} of ${brand.name}`}
-                fill
-                sizes="(min-width:1024px) 40vw, 90vw"
-                className="object-cover"
-              />
-              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-6 pt-16">
-                <p className="text-[1.15rem] font-medium tracking-[-0.02em] text-white">
-                  {brand.founder.name}
-                </p>
-                <p className="mt-0.5 font-mono text-[11px] uppercase tracking-[0.1em] text-[#c6f19d]">
-                  {brand.founder.role}
-                </p>
-              </div>
-            </div>
-          </div>
-
           {/* Story */}
           <div className="flex flex-col justify-center">
             <span className="label-pill" data-about-reveal>
@@ -156,12 +132,6 @@ export function AboutSection() {
               <Button href="/about" variant="filled">
                 Our Story
               </Button>
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 self-center font-mono text-[12px] uppercase tracking-[0.08em] text-alethia-dark/60 transition hover:text-alethia-dark"
-              >
-                Talk to us →
-              </Link>
             </div>
           </div>
         </div>

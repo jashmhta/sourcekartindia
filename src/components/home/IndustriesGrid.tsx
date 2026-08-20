@@ -26,21 +26,24 @@ export function IndustriesGrid() {
         </div>
 
         <div className="mt-12 grid gap-2.5 sm:grid-cols-2 sm:gap-3 lg:grid-cols-3">
-          {industries.map((name, i) => (
-            <Reveal key={name} delay={0.03 * i}>
-              <Link
-                href="/applications"
-                className="group flex items-center justify-between gap-3 rounded-2xl border border-white/10 bg-white/[0.03] px-5 py-4 transition duration-500 hover:border-alethia-lime/40 hover:bg-white/[0.06] md:py-5"
-              >
-                <span className="text-[13px] font-medium tracking-[-0.01em] text-white/85 md:text-[15px]">
-                  {name}
-                </span>
-                <span className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full border border-white/15 text-white/50 transition group-hover:border-alethia-lime group-hover:bg-alethia-lime group-hover:text-alethia-dark md:h-8 md:w-8">
-                  <ArrowUpRight className="h-3 w-3 md:h-3.5 md:w-3.5" />
-                </span>
-              </Link>
-            </Reveal>
-          ))}
+          {industries.map((name, i) => {
+            const slug = name.toLowerCase().replace(/ & /g, "-").replace(/ /g, "-");
+            return (
+              <Reveal key={name} delay={0.03 * i}>
+                <Link
+                  href={`/applications/${slug}`}
+                  className="group flex items-center justify-between gap-3 rounded-2xl border border-alethia-lime/40 bg-alethia-lime/10 px-5 py-4 transition duration-500 hover:border-alethia-lime hover:bg-alethia-lime/20 md:py-5"
+                >
+                  <span className="text-[13px] font-medium tracking-[-0.01em] text-white/85 md:text-[15px]">
+                    {name}
+                  </span>
+                  <span className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full border border-alethia-lime/40 text-alethia-lime transition group-hover:border-alethia-lime group-hover:bg-alethia-lime group-hover:text-alethia-dark md:h-8 md:w-8">
+                    <ArrowUpRight className="h-3 w-3 md:h-3.5 md:w-3.5" />
+                  </span>
+                </Link>
+              </Reveal>
+            );
+          })}
         </div>
       </div>
     </section>

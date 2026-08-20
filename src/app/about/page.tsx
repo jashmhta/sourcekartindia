@@ -173,7 +173,6 @@ export default function AboutPage() {
             <Button href="/contact" variant="filled">
               Get in Touch
             </Button>
-            <Button href="/applications">Explore Industries</Button>
           </div>
         </div>
       </section>
