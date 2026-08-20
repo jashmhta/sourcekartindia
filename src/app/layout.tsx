@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { Preloader } from "@/components/dynamics/Preloader";
+import Preloader from "@/components/dynamics/Preloader";
 import { SmoothScroll } from "@/components/dynamics/SmoothScroll";
 import { OrganizationSchema, WebsiteSchema } from "@/components/Schema";
 import { brand } from "@/lib/brand";
