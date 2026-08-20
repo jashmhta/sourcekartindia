@@ -80,14 +80,12 @@ export function Header() {
           style={{ height: "var(--header-h)" }}
         >
           <Link href="/" className="relative z-10 flex items-center gap-2.5">
-            <Image
-              src={`${CDN_BASE}/images/brand/logo-header-dark.png`}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={`${CDN_BASE}/images/brand/logo-clean.png`}
               alt={brand.name}
-              width={414}
-              height={144}
-              priority
-              unoptimized
-              className="h-9 w-auto max-w-[200px] object-contain object-left"
+              className="h-10 w-auto object-contain object-left"
+              style={{ imageRendering: "crisp-edges" }}
             />
           </Link>
 
@@ -165,14 +163,12 @@ export function Header() {
             className="liquid-pill flex h-12 items-center rounded-full px-4"
             aria-label={`${brand.name} home`}
           >
-            <Image
-              src={`${CDN_BASE}/images/brand/logo-mobile-dark.png`}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={`${CDN_BASE}/images/brand/logo-clean.png`}
               alt={brand.name}
-              width={276}
-              height={96}
-              priority
-              unoptimized
-              className="h-6 w-auto max-w-[140px] object-contain object-left"
+              className="h-7 w-auto object-contain object-left"
+              style={{ imageRendering: "crisp-edges" }}
             />
           </Link>
 

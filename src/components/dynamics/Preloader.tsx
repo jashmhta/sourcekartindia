@@ -2,7 +2,6 @@
 import { CDN_BASE } from "../../lib/cdn";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Image from "next/image";
 
 export default function Preloader() {
   const [isLoading, setIsLoading] = useState(true);
@@ -39,14 +38,12 @@ export default function Preloader() {
             transition={{ duration: 0.5, ease: "easeOut" }}
             className="relative"
           >
-            <Image
-              src={`${CDN_BASE}/images/brand/logo-preloader.png`}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={`${CDN_BASE}/images/brand/logo-clean.png`}
               alt="SourceKart"
-              width={2127}
-              height={739}
-              priority
-              unoptimized
-              className="h-16 w-auto md:h-20 lg:h-24"
+              className="h-20 w-auto md:h-24 lg:h-28"
+              style={{ imageRendering: "crisp-edges" }}
             />
           </motion.div>
         </motion.div>
