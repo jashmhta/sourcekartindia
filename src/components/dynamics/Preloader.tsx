@@ -40,10 +40,9 @@ export default function Preloader() {
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src={`${CDN_BASE}/images/brand/logo-clean.png`}
+              src={`${CDN_BASE}/images/brand/logo-white.png`}
               alt="SourceKart"
               className="h-20 w-auto md:h-24 lg:h-28"
-              style={{ imageRendering: "crisp-edges" }}
             />
           </motion.div>
         </motion.div>

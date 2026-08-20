@@ -82,10 +82,9 @@ export function Header() {
           <Link href="/" className="relative z-10 flex items-center gap-2.5">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src={`${CDN_BASE}/images/brand/logo-clean.png`}
+              src={`${CDN_BASE}/images/brand/logo-white.png`}
               alt={brand.name}
               className="h-10 w-auto object-contain object-left"
-              style={{ imageRendering: "crisp-edges" }}
             />
           </Link>
 
@@ -165,10 +164,9 @@ export function Header() {
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src={`${CDN_BASE}/images/brand/logo-clean.png`}
+              src={`${CDN_BASE}/images/brand/logo-white.png`}
               alt={brand.name}
               className="h-7 w-auto object-contain object-left"
-              style={{ imageRendering: "crisp-edges" }}
             />
           </Link>
 
