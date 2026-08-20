@@ -108,21 +108,13 @@ export function Hero() {
           loop
           muted
           playsInline
-          preload="metadata"
+          preload="auto"
+          poster={CDN_BASE + "/images/brand/warehouse-interior.webp"}
         >
           <source src={CDN_BASE + "/videos/hero-warehouse-1.mp4"} type="video/mp4" />
           <source src={CDN_BASE + "/videos/hero-warehouse-2.mp4"} type="video/mp4" />
           <source src={CDN_BASE + "/videos/hero-warehouse-3.mp4"} type="video/mp4" />
         </video>
-        {/* Fallback image */}
-        <Img
-          src={CDN_BASE + "/images/brand/warehouse-interior.webp"}
-          alt=""
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover"
-        />
         {/* Readability overlays */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#0f1f10]/95 via-[#0f1f10]/60 to-[#0f1f10]/20" />
         <div className="absolute inset-x-0 bottom-0 h-[30%] bg-gradient-to-t from-[#0f1f10] to-transparent" />
