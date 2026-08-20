@@ -41,9 +41,9 @@ export function Footer() {
         <div className="site-container py-8">
           <div className="grid grid-cols-2 gap-4 border-b border-white/10 pb-8 sm:grid-cols-4">
             {[
-              { v: "Est. 2026", l: "Established" },
-              { v: "8", l: "Product categories" },
-              { v: "100+", l: "Individual products" },
+              { v: "SourceKart India", l: "Ingredient sourcing" },
+              { v: "India", l: "Operating region" },
+              { v: "B2B", l: "Wholesale only" },
             ].map((s) => (
               <div key={s.l} className="text-center sm:text-left">
                 <p className="text-[1.5rem] font-medium leading-none tracking-[-0.02em] text-alethia-lime">

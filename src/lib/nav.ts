@@ -61,12 +61,8 @@ export const footer = {
   ],
   social: [
     {
-      label: "whatsapp",
-      href: "https://wa.me/919324262269",
-    },
-    {
       label: "email sales",
       href: "mailto:info@sourcekart.in",
     },
-  ],
+    ],
 } as const;
