@@ -9,7 +9,7 @@ export const brand = {
     "SourceKart is a sourcing and distribution company focused on high-quality nutraceutical, food and health ingredients. We connect manufacturers with reliable sources for amino acids, vitamins, minerals, proteins, sweeteners, extracts and other specialty ingredients.",
   url: "https://www.sourcekartindia.com",
   gst: "27GFSPB5688J1ZL",
-  logo: CDN_BASE + "/images/brand/logo-final.webp",
+  logo: CDN_BASE + "/images/brand/logo-transparent.png",
   email: {
     primary: "soucekart@gmail.com",
     sales: "soucekart@gmail.com",
