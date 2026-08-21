@@ -1,17 +1,16 @@
 {
-  "name": "SourceKart - Food & Health Ingredients",
+  "name": "SourceKart India",
   "short_name": "SourceKart",
-  "description": "One stop for quality Food & Health ingredients at competitive prices and timely service since 2016.",
+  "description": "India's trusted B2B sourcing platform for high-quality nutraceutical, food, and health ingredients. Established 2026.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0f1f10",
   "theme_color": "#0f1f10",
   "icons": [
     {
-      "src": "/images/brand/logo.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any"
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
     }
   ]
 }

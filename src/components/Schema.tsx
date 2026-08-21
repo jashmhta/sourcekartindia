@@ -1,4 +1,5 @@
-import { brand, products, faqs } from "@/lib/brand";
+import { brand, faqs } from "@/lib/brand";
+import { individualProducts } from "@/lib/products-full";
 
 /** Organization + WebSite schema, rendered on every page via layout. */
 export function OrganizationSchema() {
@@ -9,8 +10,8 @@ export function OrganizationSchema() {
     name: brand.name,
     alternateName: `M/s ${brand.name}`,
     url: brand.url,
-    logo: `${brand.url}${brand.logo}`,
-    image: `${brand.url}${brand.logo}`,
+    logo: brand.logo,
+    image: brand.logo,
     description: brand.description,
     foundingDate: brand.established,
     vatID: brand.gst,
@@ -51,14 +52,14 @@ export function WebsiteSchema() {
 }
 
 export function ProductSchema({ slug }: { slug: string }) {
-  const product = products.find((p) => p.slug === slug);
+  const product = individualProducts.find((p) => p.slug === slug);
   if (!product) return null;
   const data = {
     "@context": "https://schema.org",
     "@type": "Product",
-    name: product.title,
-    description: product.blurb,
-    image: `${brand.url}${product.image}`,
+    name: product.name,
+    description: product.description,
+    image: `https://sourcekart-cdn.binaryjash.workers.dev/images/products/${product.slug}.png`,
     brand: { "@type": "Brand", name: brand.name },
     category: "Food & Health Ingredients",
     manufacturer: { "@type": "Organization", name: brand.name },
