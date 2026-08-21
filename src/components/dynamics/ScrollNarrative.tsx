@@ -21,7 +21,7 @@ const features = [
   {
     id: "03",
     title: "One Roof for Every Industry",
-    body: "Serving pharmaceuticals, nutraceuticals, food & beverages, animal nutrition, personal care & beauty, sports nutrition, industrial chemicals, and agriculture.",
+    body: "Serving pharmaceuticals, nutraceuticals, sports nutrition, and animal nutrition across India and global markets.",
   },
   {
     id: "04",

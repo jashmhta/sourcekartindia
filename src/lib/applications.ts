@@ -1,5 +1,5 @@
 import { CDN_BASE } from "./cdn";
-/** SourceKart application segments (6 industries served) */
+/** SourceKart application segments (4 industries served) */
 
 export type Application = {
   slug: string;
@@ -106,38 +106,6 @@ const defs: Application[] = [
     ],
     relatedProducts: ["vitamins", "amino-acids", "nutraceuticals"],
   },
-  {
-    slug: "agriculture",
-    name: "Agriculture",
-    title: "Agriculture",
-    image: CDN_BASE + "/images/brand/product-agriculture-v2.webp",
-    sector: "Food & Nutrition",
-    description:
-      "Nutrient intermediates for biostimulants, plant nutrition, and crop-protection formulations.",
-    detail:
-      "Agriculture formulators use SourceKart amino acids and bioactives in biostimulant and plant-nutrition products that support crop performance. Products arrive with COA documentation and dependable supply to match seasonal production windows.",
-    chemicals: ["Glycine", "L Glutamic Acid", "L Alanine", "L Methionine"],
-    relatedProducts: ["amino-acids", "herbal-extracts"],
-  },
-  {
-    slug: "industrial-chemicals",
-    name: "Industrial Chemicals",
-    title: "Industrial Chemicals",
-    image: CDN_BASE + "/images/brand/product-industrial-chemicals-v2.webp",
-    sector: "Industrial & Specialty",
-    description:
-      "Amino acids and specialty intermediates for metal treatment, chelation, surface care, and process chemistry.",
-    detail:
-      "Industrial formulators use SourceKart amino acids and specialty intermediates across metal treatment, chelation, water treatment, surface care, and general process chemistry, where consistent purity, lot documentation, and dependable supply keep operations on schedule. Grade and specification guidance is available from our technical team.",
-    chemicals: [
-      "Glycine",
-      "L Glutamic Acid",
-      "L Aspartic Acid",
-      "Citric Acid",
-      "Betaine Anhydrous",
-    ],
-    relatedProducts: ["amino-acids", "nutraceuticals"],
-  },
 ];
 
 export const applicationsData: Application[] = defs;
@@ -145,7 +113,6 @@ export const applicationsData: Application[] = defs;
 export const sectors = [
   "Health & Wellness",
   "Food & Nutrition",
-  "Industrial & Specialty",
 ] as const;
 
 export function getApplication(slug: string): Application | undefined {
