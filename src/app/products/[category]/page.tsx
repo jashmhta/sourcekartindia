@@ -139,4 +139,4 @@ export default async function CategoryProductPage({ params }: Props) {
   );
 }
 
-export const revalidate = 10;
+export const revalidate = 0;
