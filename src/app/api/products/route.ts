@@ -15,7 +15,7 @@ export async function GET(request: Request) {
 
   return NextResponse.json({ products }, {
     headers: {
-      "Cache-Control": "no-store, no-cache, must-revalidate",
+      "Cache-Control": "private, no-cache, no-store, must-revalidate",
     },
   });
 }
