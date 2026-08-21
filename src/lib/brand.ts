@@ -100,8 +100,6 @@ export const products: Product[] = [
       "N Acetyl L Tyrosine",
       "N Acetyl L-Carnitine",
       "N Acetyl L-Cysteine",
-      "Soy Protein Isolate 90%",
-      "Whey Protein Isolate",
     ],
   },
   {
@@ -207,7 +205,7 @@ export const products: Product[] = [
     image: CDN_BASE + "/images/brand/product-proteins.webp",
     blurb:
       "Plant-based and dairy proteins for sports nutrition, functional foods, and beverages, clean label and backed by full documentation.",
-    items: ["Pea Protein", "Rice Protein Powder", "Whey Protein Concentrate"],
+    items: ["Pea Protein", "Soy Protein Isolate", "Whey Protein Concentrate", "Whey Protein 80% Instant"],
   },
   {
     slug: "sports-nutrition",
@@ -222,16 +220,7 @@ export const products: Product[] = [
       "Beta Alanine",
       "Betaine Anhydrous",
       "Creatine Monohydrate",
-      "D-Aspartic Acid",
       "EAA (Essential Amino Acid)",
-      "HMB Calcium",
-      "L Arginine",
-      "L Arginine Alpha Ketoglutarate (AAKG)",
-      "L Carnitine Base",
-      "L Citrulline",
-      "L Citrulline DL Malate 2:1",
-      "L Glutamine",
-      "Taurine",
     ],
   },
 ];
