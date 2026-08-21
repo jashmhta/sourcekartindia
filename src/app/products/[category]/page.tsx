@@ -11,19 +11,19 @@ import { BreadcrumbSchema } from "@/components/Schema";
 
 type Props = { params: Promise<{ category: string }> };
 export const dynamic = 'force-dynamic';
+export const revalidate = 0;
 
-export function generateStaticParams() {
-  return [
-    "amino-acids",
-    "herbal-extracts",
-    "nutraceuticals",
-    "sweeteners",
-    "nucleotides",
-    "proteins",
-    "sports-nutrition",
-    "vitamins",
-  ].map((c) => ({ category: c }));
-}
+// Known category slugs for metadata generation
+const categorySlugs = [
+  "amino-acids",
+  "herbal-extracts",
+  "nutraceuticals",
+  "sweeteners",
+  "nucleotides",
+  "proteins",
+  "sports-nutrition",
+  "vitamins",
+];
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { category } = await params;

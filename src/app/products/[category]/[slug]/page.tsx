@@ -8,13 +8,7 @@ import { BreadcrumbSchema } from "@/components/Schema";
 
 type Props = { params: Promise<{ category: string; slug: string }> };
 export const dynamic = 'force-dynamic';
-
-export function generateStaticParams() {
-  return individualProducts.map((p) => ({
-    category: p.categorySlug,
-    slug: p.slug,
-  }));
-}
+export const revalidate = 0;
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
