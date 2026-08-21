@@ -15,7 +15,7 @@ const features = [
   },
   {
     id: "02",
-    title: "Leadership Built on Experience",
+    title: "Founder-Led Sourcing",
     body: `${brand.founder.name}, Founder of ${brand.name}, is building a sourcing network on trust, transparency, and long-term relationships across the ingredient industry.`,
   },
   {
