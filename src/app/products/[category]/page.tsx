@@ -10,6 +10,7 @@ import { individualProducts } from "@/lib/products-full";
 import { BreadcrumbSchema } from "@/components/Schema";
 
 type Props = { params: Promise<{ category: string }> };
+export const dynamic = 'force-dynamic';
 
 export function generateStaticParams() {
   return [
@@ -139,4 +140,4 @@ export default async function CategoryProductPage({ params }: Props) {
   );
 }
 
-export const revalidate = 0;
+// Dynamic mode above bypasses all ISR/static caching

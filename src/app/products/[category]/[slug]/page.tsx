@@ -7,6 +7,7 @@ import { brand } from "@/lib/brand";
 import { BreadcrumbSchema } from "@/components/Schema";
 
 type Props = { params: Promise<{ category: string; slug: string }> };
+export const dynamic = 'force-dynamic';
 
 export function generateStaticParams() {
   return individualProducts.map((p) => ({
