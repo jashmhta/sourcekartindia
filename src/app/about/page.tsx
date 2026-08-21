@@ -58,7 +58,7 @@ export default function AboutPage() {
             <Reveal delay={0.1}>
               <div className="relative overflow-hidden rounded-[28px] border border-alethia-dark/10 shadow-lg">
                 <Img
-                  src={CDN_BASE + "/images/about/office.webp"}
+                  src={CDN_BASE + "/images/about/office-v2.webp"}
                   alt="SourceKart India office"
                   width={1200}
                   height={900}
