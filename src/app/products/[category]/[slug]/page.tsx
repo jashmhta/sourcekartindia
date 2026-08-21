@@ -1,6 +1,7 @@
 import { CDN_BASE } from "../../../../lib/cdn";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { headers } from "next/headers";
 import { individualProducts } from "@/lib/products-full";
 import { IndividualProductPage } from "@/components/IndividualProductPage";
 import { brand } from "@/lib/brand";
@@ -40,6 +41,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function IndividualProductPageRoute({ params }: Props) {
+  // Prevent any edge/ISR caching - always render fresh
+  (await headers()).set("Cache-Control", "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0");
+  (await headers()).set("Surrogate-Control", "no-store");
   const { slug } = await params;
   const product = individualProducts.find((p) => p.slug === slug);
   if (!product) notFound();

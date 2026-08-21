@@ -47,6 +47,19 @@ export function MobileCTA() {
       }}
     >
       <div className="flex items-center justify-center gap-3 py-2.5">
+        {/* Products */}
+        <Link
+          href="/products"
+          className="flex h-11 items-center justify-center gap-1.5 rounded-full bg-[#5c8a3f]/95 border border-white/15 backdrop-blur-md touch-manipulation transition-transform active:scale-90 shadow-lg shadow-black/40 px-4"
+          aria-label="Browse Products"
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+            <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" />
+            <line x1="7" y1="7" x2="7.01" y2="7" />
+          </svg>
+          <span className="text-white text-sm font-medium">Products</span>
+        </Link>
+
         {/* WhatsApp */}
         <a
           href="https://wa.me/919324262269"

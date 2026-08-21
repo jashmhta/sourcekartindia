@@ -1,10 +1,13 @@
 import { products } from "./brand";
 
 export const nav = {
-  products: products.map((p) => ({
-    label: p.title,
-    href: p.href,
-  })),
+  products: [
+    { label: "All Products", href: "/products" },
+    ...products.map((p) => ({
+      label: p.title,
+      href: p.href,
+    })),
+  ],
   company: [
     { label: "About Us", href: "/about" },
   ],
@@ -39,10 +42,13 @@ export const footer = {
     },
     {
       title: "products",
-      links: products.slice(0, 5).map((p) => ({
-        label: p.title.toLowerCase(),
-        href: p.href,
-      })),
+      links: [
+        { label: "all products", href: "/products" },
+        ...products.slice(0, 5).map((p) => ({
+          label: p.title.toLowerCase(),
+          href: p.href,
+        })),
+      ],
     },
     {
       title: "more products",

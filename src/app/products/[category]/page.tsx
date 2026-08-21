@@ -2,6 +2,7 @@ import { CDN_BASE } from "../../../lib/cdn";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { headers } from "next/headers";
 import { PageHero } from "@/components/PageHero";
 import { Img } from "@/components/ui/Img";
 import { ArrowRight } from "@/components/ui/Icons";
@@ -48,6 +49,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function CategoryProductPage({ params }: Props) {
+  // Prevent any edge/ISR caching - always render fresh
+  (await headers()).set("Cache-Control", "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0");
+  (await headers()).set("Surrogate-Control", "no-store");
   const { category } = await params;
   const categoryProducts = individualProducts.filter(
     (p) => p.categorySlug === category
